@@ -1,0 +1,1709 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- =========================================================
+         DOCUMENT
+    ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- =========================================================
+     SEO
+========================================================== -->
+    <title>
+      Vertex Digital — Digital Solutions That Move Businesses Forward
+    </title>
+
+    <meta
+      name="description"
+      content="Vertex Digital creates high-performance websites, digital marketing campaigns, graphic designs, and professional video content that help businesses grow."
+    />
+
+    <meta
+      name="keywords"
+      content="web development, digital marketing, graphic designing, video production, digital agency, website development, branding"
+    />
+
+    <meta name="author" content="Vertex Digital" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.example.com/" />
+
+    <!-- =========================================================
+     OPEN GRAPH
+========================================================== -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Vertex Digital — Digital Solutions That Move Businesses Forward"
+    />
+    <meta
+      property="og:description"
+      content="Web development, digital marketing, graphic design, and video production for ambitious businesses."
+    />
+    <meta property="og:url" content="https://www.example.com/" />
+    <meta property="og:site_name" content="Vertex Digital" />
+
+    <!-- Replace with your actual social sharing image -->
+    <meta
+      property="og:image"
+      content="https://www.example.com/assets/images/og-image.jpg"
+    />
+    <meta property="og:image:alt" content="Vertex Digital" />
+
+    <!-- =========================================================
+     TWITTER / X
+========================================================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Vertex Digital — Digital Solutions That Move Businesses Forward"
+    />
+    <meta
+      name="twitter:description"
+      content="Web development, digital marketing, graphic design, and video production for ambitious businesses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.example.com/assets/images/og-image.jpg"
+    />
+
+    <!-- =========================================================
+     PERFORMANCE
+========================================================== -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+
+    <!-- =========================================================
+     TAILWIND CSS
+     No custom CSS is used anywhere in this document.
+========================================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- =========================================================
+     TAILWIND CONFIG
+     Utility configuration only — no custom CSS.
+========================================================== -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- =========================================================
+     LUCIDE ICONS
+========================================================== -->
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.lucide && typeof window.lucide.createIcons === "function") {
+          window.lucide.createIcons();
+        }
+      });
+    </script>
+
+    <!-- =========================================================
+     STRUCTURED DATA
+========================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Vertex Digital",
+        "url": "https://www.example.com/",
+        "description": "Digital agency providing web development, digital marketing, graphic design and video production services.",
+        "email": "hello@example.com",
+        "telephone": "+91-0000000000",
+        "sameAs": [
+          "https://www.linkedin.com/",
+          "https://www.instagram.com/",
+          "https://www.facebook.com/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "hello@example.com",
+          "telephone": "+91-0000000000"
+        }
+      }
+    </script>
+  </head>
+
+  <body class="min-h-screen bg-slate-950 font-sans text-slate-100 antialiased">
+    <!-- =========================================================
+     HEADER
+========================================================== -->
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-50 border-b border-transparent bg-slate-950/80 backdrop-blur-xl transition-all duration-300"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
+        aria-label="Main navigation"
+      >
+        <!-- Logo -->
+        <a
+          href="#home"
+          class="group flex items-center gap-3"
+          aria-label="Vertex Digital home"
+        >
+          <span
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-lg font-black text-white shadow-lg shadow-blue-600/20 transition-transform duration-300 group-hover:scale-105"
+          >
+            V
+          </span>
+
+          <span class="text-lg font-bold tracking-tight text-white">
+            Vertex<span class="text-blue-400">Digital</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden items-center gap-8 lg:flex">
+          <a
+            href="#home"
+            class="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            class="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+          >
+            About
+          </a>
+
+          <a
+            href="#services"
+            class="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+          >
+            Services
+          </a>
+
+          <a
+            href="#testimonials"
+            class="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+          >
+            Testimonials
+          </a>
+
+          <a
+            href="#contact"
+            class="text-sm font-medium text-slate-300 transition-colors hover:text-white"
+          >
+            Contact
+          </a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <a
+          href="#contact"
+          class="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-white/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-50 sm:inline-flex"
+        >
+          Let's Talk
+          <i
+            data-lucide="arrow-up-right"
+            class="h-4 w-4"
+            aria-hidden="true"
+          ></i>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-button"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 bg-slate-900 text-slate-200 transition-colors hover:bg-slate-800 lg:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open navigation menu"
+        >
+          <i data-lucide="menu" class="h-5 w-5" aria-hidden="true"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-slate-800 bg-slate-950/95 px-4 py-5 backdrop-blur-xl lg:hidden"
+      >
+        <div class="mx-auto flex max-w-7xl flex-col gap-2">
+          <a
+            href="#home"
+            class="mobile-nav-link rounded-lg px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-900 hover:text-white"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            class="mobile-nav-link rounded-lg px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-900 hover:text-white"
+          >
+            About
+          </a>
+
+          <a
+            href="#services"
+            class="mobile-nav-link rounded-lg px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-900 hover:text-white"
+          >
+            Services
+          </a>
+
+          <a
+            href="#testimonials"
+            class="mobile-nav-link rounded-lg px-4 py-3 text-sm font-medium text-slate-300 transition-colors hover:bg-slate-900 hover:text-white"
+          >
+            Testimonials
+          </a>
+
+          <a
+            href="#contact"
+            class="mobile-nav-link mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-500"
+          >
+            Let's Talk
+            <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- =====================================================
+         HERO
+    ====================================================== -->
+      <section
+        id="home"
+        class="relative isolate overflow-hidden pt-32 sm:pt-36 lg:pt-44"
+        aria-labelledby="hero-heading"
+      >
+        <!-- Background -->
+        <div class="absolute inset-0 -z-10">
+          <div
+            class="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/20 blur-3xl"
+          ></div>
+          <div
+            class="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-indigo-600/10 blur-3xl"
+          ></div>
+        </div>
+
+        <div
+          class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32"
+        >
+          <div class="mx-auto max-w-4xl text-center">
+            <!-- Badge -->
+            <div
+              class="mb-7 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-300"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex h-2 w-2 rounded-full bg-blue-400"
+                ></span>
+              </span>
+              Building what's next
+            </div>
+
+            <!-- Heading -->
+            <h1
+              id="hero-heading"
+              class="text-center text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl"
+            >
+              We turn ideas into
+              <span class="text-blue-400">digital experiences.</span>
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="mx-auto mt-7 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg"
+            >
+              We help ambitious businesses grow through high-performance
+              websites, strategic digital marketing, memorable design, and
+              powerful visual storytelling.
+            </p>
+
+            <!-- CTA -->
+            <div
+              class="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
+            >
+              <a
+                href="#contact"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-blue-600/20 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 sm:w-auto"
+              >
+                Start a Project
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                ></i>
+              </a>
+
+              <a
+                href="#services"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/50 px-7 py-3.5 text-sm font-semibold text-slate-200 transition-all duration-300 hover:-translate-y-1 hover:border-slate-600 hover:bg-slate-800 sm:w-auto"
+              >
+                Explore Services
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual -->
+          <div
+            class="mx-auto mt-16 max-w-5xl rounded-3xl border border-slate-800 bg-slate-900/60 p-2 shadow-2xl shadow-black/30 backdrop-blur-sm sm:mt-20"
+          >
+            <div
+              class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950"
+            >
+              <!-- Browser Bar -->
+              <div
+                class="flex items-center gap-2 border-b border-slate-800 px-4 py-3"
+              >
+                <span class="h-2.5 w-2.5 rounded-full bg-slate-700"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-slate-700"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-slate-700"></span>
+
+                <div
+                  class="ml-4 hidden h-7 flex-1 rounded-md bg-slate-900 sm:block"
+                ></div>
+              </div>
+
+              <!-- Dashboard Preview -->
+              <div class="grid min-h-72 gap-4 p-5 sm:grid-cols-3 sm:p-7">
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-900 p-5"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-500"
+                      >Growth</span
+                    >
+                    <i
+                      data-lucide="chart-bar"
+                      class="h-4 w-4 text-blue-400"
+                    ></i>
+                  </div>
+
+                  <div class="mt-8 text-3xl font-bold text-white">+248%</div>
+
+                  <div
+                    class="mt-5 h-2 overflow-hidden rounded-full bg-slate-800"
+                  >
+                    <div class="h-full w-4/5 rounded-full bg-blue-500"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-900 p-5"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-500"
+                      >Projects</span
+                    >
+                    <i data-lucide="sparkles" class="h-4 w-4 text-blue-400"></i>
+                  </div>
+
+                  <div class="mt-8 text-3xl font-bold text-white">120+</div>
+
+                  <div class="mt-5 flex gap-2">
+                    <span class="h-2 w-1/3 rounded-full bg-slate-700"></span>
+                    <span class="h-2 w-1/4 rounded-full bg-blue-500"></span>
+                    <span class="h-2 w-1/5 rounded-full bg-slate-700"></span>
+                  </div>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-900 p-5"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-blue-500"
+                      >Performance</span
+                    >
+                    <i
+                      data-lucide="bolt"
+                      class="h-4 w-4 text-blue-400"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+
+                  <div class="mt-8 text-3xl font-bold text-white">98%</div>
+
+                  <div class="mt-5 flex items-end gap-1">
+                    <span class="h-5 w-2 rounded-full bg-slate-700"></span>
+                    <span class="h-8 w-2 rounded-full bg-slate-700"></span>
+                    <span class="h-12 w-2 rounded-full bg-blue-500"></span>
+                    <span class="h-7 w-2 rounded-full bg-slate-700"></span>
+                    <span class="h-14 w-2 rounded-full bg-blue-400"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         STATS
+    ====================================================== -->
+      <section
+        class="border-y border-slate-800 bg-slate-900/50"
+        aria-label="Company statistics"
+      >
+        <div
+          class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-y divide-slate-800 sm:grid-cols-4 sm:divide-y-0 px-4 sm:px-6 lg:px-8"
+        >
+          <div class="px-5 py-8 text-center sm:py-10">
+            <p
+              class="counter text-3xl font-black tracking-tight text-white sm:text-4xl"
+              data-target="120"
+              data-suffix="+"
+            >
+              0
+            </p>
+            <p class="mt-2 text-sm text-blue-500">Projects Delivered</p>
+          </div>
+
+          <div class="px-5 py-8 text-center sm:py-10">
+            <p
+              class="counter text-3xl font-black tracking-tight text-white sm:text-4xl"
+              data-target="80"
+              data-suffix="+"
+            >
+              0
+            </p>
+            <p class="mt-2 text-sm text-blue-500">Happy Clients</p>
+          </div>
+
+          <div class="px-5 py-8 text-center sm:py-10">
+            <p
+              class="counter text-3xl font-black tracking-tight text-white sm:text-4xl"
+              data-target="6"
+              data-suffix="+"
+            >
+              0
+            </p>
+            <p class="mt-2 text-sm text-blue-500">Years Experience</p>
+          </div>
+
+          <div class="px-5 py-8 text-center sm:py-10">
+            <p
+              class="counter text-3xl font-black tracking-tight text-white sm:text-4xl"
+              data-target="98"
+              data-suffix="%"
+            >
+              0
+            </p>
+            <p class="mt-2 text-sm text-blue-500">Client Satisfaction</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+      <section
+        id="about"
+        class="scroll-mt-24 py-24 sm:py-28 lg:py-32"
+        aria-labelledby="about-heading"
+      >
+        <div
+          class="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-8"
+        >
+          <!-- Content -->
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-blue-400"
+            >
+              About Us
+            </p>
+
+            <h2
+              id="about-heading"
+              class="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Digital thinking.
+              <span class="text-blue-500">Real-world results.</span>
+            </h2>
+
+            <p class="mt-6 leading-8 text-slate-400">
+              We are a multidisciplinary digital team focused on helping
+              businesses build a stronger presence online. From the first idea
+              to the final launch, we combine strategy, creativity, technology,
+              and performance.
+            </p>
+
+            <p class="mt-5 leading-8 text-slate-400">
+              Our approach is simple: understand your business, solve the right
+              problems, and create digital experiences that are beautiful,
+              useful, fast, and built to perform.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="flex gap-3">
+                <span
+                  class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400"
+                >
+                  <i data-lucide="check" class="h-4 w-4" aria-hidden="true"></i>
+                </span>
+                <span class="text-sm text-slate-300">
+                  Strategy-first approach
+                </span>
+              </div>
+
+              <div class="flex gap-3">
+                <span
+                  class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400"
+                >
+                  <i data-lucide="check" class="h-4 w-4" aria-hidden="true"></i>
+                </span>
+                <span class="text-sm text-slate-300">
+                  Performance-focused solutions
+                </span>
+              </div>
+
+              <div class="flex gap-3">
+                <span
+                  class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400"
+                >
+                  <i data-lucide="check" class="h-4 w-4" aria-hidden="true"></i>
+                </span>
+                <span class="text-sm text-slate-300">
+                  Transparent communication
+                </span>
+              </div>
+
+              <div class="flex gap-3">
+                <span
+                  class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-blue-400"
+                >
+                  <i data-lucide="check" class="h-4 w-4" aria-hidden="true"></i>
+                </span>
+                <span class="text-sm text-slate-300">
+                  Long-term partnerships
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Card -->
+          <div class="relative">
+            <div
+              class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-2xl shadow-black/20 sm:p-8"
+            >
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-950 p-6"
+                >
+                  <i
+                    data-lucide="bolt"
+                    class="h-7 w-7 text-blue-400"
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="mt-5 font-bold text-white">Fast</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-500">
+                    Optimized experiences built for speed.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-950 p-6"
+                >
+                  <i
+                    data-lucide="shield-check"
+                    class="h-7 w-7 text-blue-400"
+                  ></i>
+                  <h3 class="mt-5 font-bold text-white">Reliable</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-500">
+                    Scalable solutions designed to last.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-950 p-6"
+                >
+                  <i data-lucide="sparkles" class="h-7 w-7 text-blue-400"></i>
+                  <h3 class="mt-5 font-bold text-white">Creative</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-500">
+                    Design that makes your brand memorable.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-2xl border border-slate-800 bg-slate-950 p-6"
+                >
+                  <i data-lucide="chart-bar" class="h-7 w-7 text-blue-400"></i>
+                  <h3 class="mt-5 font-bold text-white">Results</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-500">
+                    Every decision tied to business outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+      <section
+        id="services"
+        class="scroll-mt-24 border-y border-slate-800 bg-slate-900/40 py-24 sm:py-28 lg:py-32"
+        aria-labelledby="services-heading"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-blue-400"
+            >
+              Our Services
+            </p>
+
+            <h2
+              id="services-heading"
+              class="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Everything you need to
+              <span class="text-blue-500">move forward.</span>
+            </h2>
+
+            <p class="mt-5 max-w-2xl leading-8 text-slate-400">
+              One team for your digital presence, from strategy and development
+              to creative production and growth.
+            </p>
+          </div>
+
+          <div class="mt-14 grid gap-5 md:grid-cols-2">
+            <!-- Web Development -->
+            <article
+              class="group rounded-3xl border border-slate-800 bg-slate-950 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-900 sm:p-8"
+            >
+              <div class="flex items-start justify-between">
+                <span
+                  class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-400"
+                >
+                  <i
+                    data-lucide="code-xml"
+                    class="h-7 w-7"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+
+                <span class="text-sm font-medium text-slate-600"> 01 </span>
+              </div>
+
+              <h3 class="mt-8 text-2xl font-bold text-white">
+                Web Development
+              </h3>
+
+              <p class="mt-4 leading-7 text-slate-500">
+                Fast, responsive, SEO-friendly websites and web applications
+                designed around your business goals.
+              </p>
+
+              <a
+                href="#contact"
+                class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-blue-400 transition-colors hover:text-blue-300"
+              >
+                Build your website
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </article>
+
+            <!-- Digital Marketing -->
+            <article
+              class="group rounded-3xl border border-slate-800 bg-slate-950 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-900 sm:p-8"
+            >
+              <div class="flex items-start justify-between">
+                <span
+                  class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-400"
+                >
+                  <i
+                    data-lucide="megaphone"
+                    class="h-7 w-7"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+
+                <span class="text-sm font-medium text-slate-600"> 02 </span>
+              </div>
+
+              <h3 class="mt-8 text-2xl font-bold text-white">
+                Digital Marketing
+              </h3>
+
+              <p class="mt-4 leading-7 text-slate-500">
+                Data-driven SEO, social media, paid campaigns, and content
+                strategies built to attract and convert.
+              </p>
+
+              <a
+                href="#contact"
+                class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-blue-400 transition-colors hover:text-blue-300"
+              >
+                Grow your business
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </article>
+
+            <!-- Graphic Design -->
+            <article
+              class="group rounded-3xl border border-slate-800 bg-slate-950 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-900 sm:p-8"
+            >
+              <div class="flex items-start justify-between">
+                <span
+                  class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-400"
+                >
+                  <i
+                    data-lucide="paintbrush"
+                    class="h-7 w-7"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+
+                <span class="text-sm font-medium text-slate-600"> 03 </span>
+              </div>
+
+              <h3 class="mt-8 text-2xl font-bold text-white">
+                Graphic Designing
+              </h3>
+
+              <p class="mt-4 leading-7 text-slate-500">
+                Distinctive visual identities, marketing creatives,
+                presentations, social media designs, and brand assets.
+              </p>
+
+              <a
+                href="#contact"
+                class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-blue-400 transition-colors hover:text-blue-300"
+              >
+                Shape your brand
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </article>
+
+            <!-- Video Production -->
+            <article
+              class="group rounded-3xl border border-slate-800 bg-slate-950 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40 hover:bg-slate-900 sm:p-8"
+            >
+              <div class="flex items-start justify-between">
+                <span
+                  class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-400"
+                >
+                  <i data-lucide="film" class="h-7 w-7" aria-hidden="true"></i>
+                </span>
+
+                <span class="text-sm font-medium text-slate-600"> 04 </span>
+              </div>
+
+              <h3 class="mt-8 text-2xl font-bold text-white">
+                Video Production
+              </h3>
+
+              <p class="mt-4 leading-7 text-slate-500">
+                Engaging promotional videos, social content, product films,
+                reels, and visual stories that connect.
+              </p>
+
+              <a
+                href="#contact"
+                class="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-blue-400 transition-colors hover:text-blue-300"
+              >
+                Tell your story
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         TESTIMONIALS
+    ====================================================== -->
+      <section
+        id="testimonials"
+        class="scroll-mt-24 py-24 sm:py-28 lg:py-32"
+        aria-labelledby="testimonials-heading"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-blue-400"
+            >
+              Testimonials
+            </p>
+
+            <h2
+              id="testimonials-heading"
+              class="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Loved by the people
+              <span class="text-blue-500">we work with.</span>
+            </h2>
+          </div>
+
+          <div class="mt-14 grid gap-5 lg:grid-cols-3">
+            <!-- Testimonial 1 -->
+            <figure
+              class="rounded-3xl border border-slate-800 bg-slate-900/60 p-7 sm:p-8"
+            >
+              <div
+                class="flex gap-1 text-amber-400"
+                aria-label="5 out of 5 stars"
+              >
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <blockquote class="mt-6 text-lg leading-8 text-slate-300">
+                "The new website completely changed how our customers perceive
+                the brand. The process was smooth and the final result exceeded
+                our expectations."
+              </blockquote>
+
+              <figcaption class="mt-7 flex items-center gap-3">
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-full bg-blue-600 font-bold text-white"
+                >
+                  AR
+                </span>
+
+                <div>
+                  <p class="font-semibold text-white">Aarav Rao</p>
+                  <p class="text-sm text-blue-500">Founder, Nova Labs</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- Testimonial 2 -->
+            <figure
+              class="rounded-3xl border border-slate-800 bg-slate-900/60 p-7 sm:p-8"
+            >
+              <div
+                class="flex gap-1 text-amber-400"
+                aria-label="5 out of 5 stars"
+              >
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <blockquote class="mt-6 text-lg leading-8 text-slate-300">
+                "They understood our business quickly and turned our ideas into
+                a digital strategy that actually delivered measurable results."
+              </blockquote>
+
+              <figcaption class="mt-7 flex items-center gap-3">
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-full bg-indigo-600 font-bold text-white"
+                >
+                  SK
+                </span>
+
+                <div>
+                  <p class="font-semibold text-white">Simran Kapoor</p>
+                  <p class="text-sm text-blue-500">Marketing Lead, Elevate</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- Testimonial 3 -->
+            <figure
+              class="rounded-3xl border border-slate-800 bg-slate-900/60 p-7 sm:p-8"
+            >
+              <div
+                class="flex gap-1 text-amber-400"
+                aria-label="5 out of 5 stars"
+              >
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  data-lucide="star"
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                ></i>
+              </div>
+
+              <blockquote class="mt-6 text-lg leading-8 text-slate-300">
+                "From branding to video production, the team brought consistency
+                to every part of our marketing. Highly recommended."
+              </blockquote>
+
+              <figcaption class="mt-7 flex items-center gap-3">
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-full bg-violet-600 font-bold text-white"
+                >
+                  VM
+                </span>
+
+                <div>
+                  <p class="font-semibold text-white">Vikram Mehta</p>
+                  <p class="text-sm text-blue-500">Director, Horizon Group</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+      <section
+        id="contact"
+        class="scroll-mt-24 border-t border-slate-800 bg-slate-900/40 py-24 sm:py-28 lg:py-32"
+        aria-labelledby="contact-heading"
+      >
+        <div
+          class="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8"
+        >
+          <!-- Contact Information -->
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-blue-400"
+            >
+              Contact Us
+            </p>
+
+            <h2
+              id="contact-heading"
+              class="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl lg:text-5xl"
+            >
+              Let's build something
+              <span class="text-blue-500">great together.</span>
+            </h2>
+
+            <p class="mt-6 max-w-xl leading-8 text-slate-400">
+              Have a project in mind, need a digital partner, or simply want to
+              discuss an idea? Send us a message and let's start a conversation.
+            </p>
+
+            <div class="mt-9 space-y-5">
+              <a
+                href="mailto:hello@example.com"
+                class="flex items-center gap-4 text-slate-300 transition-colors hover:text-white"
+              >
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-800 text-blue-400"
+                >
+                  <i data-lucide="mail" class="h-5 w-5" aria-hidden="true"></i>
+                </span>
+
+                <span>
+                  <span
+                    class="block text-xs font-medium uppercase tracking-wider text-blue-500"
+                  >
+                    Email
+                  </span>
+                  <span class="mt-1 block text-sm font-medium">
+                    hello@example.com
+                  </span>
+                </span>
+              </a>
+
+              <a
+                href="tel:+910000000000"
+                class="flex items-center gap-4 text-slate-300 transition-colors hover:text-white"
+              >
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-800 text-blue-400"
+                >
+                  <i data-lucide="phone" class="h-5 w-5" aria-hidden="true"></i>
+                </span>
+
+                <span>
+                  <span
+                    class="block text-xs font-medium uppercase tracking-wider text-blue-500"
+                  >
+                    Phone
+                  </span>
+                  <span class="mt-1 block text-sm font-medium">
+                    +91 00000 00000
+                  </span>
+                </span>
+              </a>
+
+              <div class="flex items-center gap-4 text-slate-300">
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-800 text-blue-400"
+                >
+                  <i
+                    data-lucide="map-pin"
+                    class="h-5 w-5"
+                    aria-hidden="true"
+                  ></i>
+                </span>
+
+                <span>
+                  <span
+                    class="block text-xs font-medium uppercase tracking-wider text-blue-500"
+                  >
+                    Location
+                  </span>
+                  <span class="mt-1 block text-sm font-medium"> India </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="rounded-3xl border border-slate-800 bg-slate-950 p-6 shadow-2xl shadow-black/20 sm:p-8"
+          >
+            <form id="contact-form" action="#" method="post">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <!-- Name -->
+                <div class="sm:col-span-1">
+                  <label for="name" class="text-sm font-medium text-slate-300">
+                    Full Name
+                  </label>
+
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    minlength="2"
+                    placeholder="Your name"
+                    class="mt-2 block w-full rounded-xl border border-slate-800 bg-slate-900 px-4 py-3.5 text-sm text-white outline-none transition-all placeholder:text-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="sm:col-span-1">
+                  <label for="email" class="text-sm font-medium text-slate-300">
+                    Email Address
+                  </label>
+
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    placeholder="you@example.com"
+                    class="mt-2 block w-full rounded-xl border border-slate-800 bg-slate-900 px-4 py-3.5 text-sm text-white outline-none transition-all placeholder:text-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  />
+                </div>
+
+                <!-- Company -->
+                <div class="sm:col-span-1">
+                  <label
+                    for="company"
+                    class="text-sm font-medium text-slate-300"
+                  >
+                    Company
+                  </label>
+
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    autocomplete="organization"
+                    placeholder="Company name"
+                    class="mt-2 block w-full rounded-xl border border-slate-800 bg-slate-900 px-4 py-3.5 text-sm text-white outline-none transition-all placeholder:text-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  />
+                </div>
+
+                <!-- Service -->
+                <div class="sm:col-span-1">
+                  <label
+                    for="service"
+                    class="text-sm font-medium text-slate-300"
+                  >
+                    Service
+                  </label>
+
+                  <select
+                    id="service"
+                    name="service"
+                    required
+                    class="mt-2 block w-full rounded-xl border border-slate-800 bg-slate-900 px-4 py-3.5 text-sm text-white outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="graphic-designing">Graphic Designing</option>
+                    <option value="video-production">Video Production</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="sm:col-span-2">
+                  <label
+                    for="message"
+                    class="text-sm font-medium text-slate-300"
+                  >
+                    Project Details
+                  </label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    minlength="10"
+                    placeholder="Tell us a little about your project..."
+                    class="mt-2 block w-full resize-y rounded-xl border border-slate-800 bg-slate-900 px-4 py-3.5 text-sm text-white outline-none transition-all placeholder:text-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- Form Status -->
+              <p
+                id="form-status"
+                class="mt-5 hidden rounded-xl border px-4 py-3 text-sm"
+                role="status"
+                aria-live="polite"
+              ></p>
+
+              <!-- Submit -->
+              <button
+                type="submit"
+                class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition-all duration-300 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                Send Message
+                <i
+                  data-lucide="arrow-right"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                ></i>
+              </button>
+
+              <p class="mt-4 text-center text-xs leading-5 text-slate-600">
+                We respect your privacy and will only use your details to
+                respond to your enquiry.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+     FOOTER
+========================================================== -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid gap-10 md:grid-cols-4">
+          <!-- Brand -->
+          <div class="md:col-span-2">
+            <a
+              href="#home"
+              class="inline-flex items-center gap-3"
+              aria-label="Vertex Digital home"
+            >
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-lg font-black text-white"
+              >
+                V
+              </span>
+
+              <span class="text-lg font-bold tracking-tight text-white">
+                Vertex<span class="text-blue-400">Digital</span>
+              </span>
+            </a>
+
+            <p class="mt-5 max-w-md text-sm leading-7 text-slate-500">
+              Digital experiences, creative solutions, and growth strategies for
+              businesses ready to move forward.
+            </p>
+
+            <!-- Social Links -->
+            <div class="mt-6 flex gap-3">
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 text-xs font-bold text-slate-400 transition-colors hover:border-blue-500 hover:text-blue-400"
+              >
+                in
+              </a>
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 text-xs font-bold text-slate-400 transition-colors hover:border-blue-500 hover:text-blue-400"
+              >
+                ig
+              </a>
+
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 text-xs font-bold text-slate-400 transition-colors hover:border-blue-500 hover:text-blue-400"
+              >
+                f
+              </a>
+            </div>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h2 class="text-sm font-semibold text-white">Company</h2>
+
+            <ul class="mt-5 space-y-3">
+              <li>
+                <a
+                  href="#about"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Services
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Testimonials
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h2 class="text-sm font-semibold text-white">Services</h2>
+
+            <ul class="mt-5 space-y-3">
+              <li>
+                <a
+                  href="#services"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Web Development
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Digital Marketing
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Graphic Designing
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  class="text-sm text-blue-500 transition-colors hover:text-white"
+                >
+                  Video Production
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-12 flex flex-col gap-4 border-t border-slate-800 pt-7 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <p class="text-xs text-slate-600">
+            © <span id="current-year"></span> Vertex Digital. All rights
+            reserved.
+          </p>
+
+          <div class="flex gap-5">
+            <a
+              href="#"
+              class="text-xs text-slate-600 transition-colors hover:text-slate-300"
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="#"
+              class="text-xs text-slate-600 transition-colors hover:text-slate-300"
+            >
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+     JAVASCRIPT
+========================================================== -->
+    <script>
+      "use strict";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        /* =====================================================
+           ELEMENTS
+        ====================================================== */
+        const header = document.getElementById("site-header");
+        const menuButton = document.getElementById("menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const contactForm = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+        const currentYear = document.getElementById("current-year");
+
+        /* =====================================================
+           CURRENT YEAR
+        ====================================================== */
+        if (currentYear) {
+          currentYear.textContent = new Date().getFullYear();
+        }
+
+        /* =====================================================
+           STICKY HEADER STATE
+        ====================================================== */
+        const updateHeader = () => {
+          if (!header) {
+            return;
+          }
+
+          if (window.scrollY > 20) {
+            header.classList.add(
+              "border-slate-800",
+              "bg-slate-950/95",
+              "shadow-xl",
+              "shadow-black/10",
+            );
+          } else {
+            header.classList.remove(
+              "border-slate-800",
+              "bg-slate-950/95",
+              "shadow-xl",
+              "shadow-black/10",
+            );
+          }
+        };
+
+        updateHeader();
+
+        window.addEventListener("scroll", updateHeader, { passive: true });
+
+        /* =====================================================
+           MOBILE NAVIGATION
+        ====================================================== */
+        const setMenuState = (isOpen) => {
+          if (!menuButton || !mobileMenu) {
+            return;
+          }
+
+          mobileMenu.classList.toggle("hidden", !isOpen);
+
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+
+          menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu",
+          );
+
+          menuButton.innerHTML = isOpen
+            ? '<i data-lucide="x" class="h-5 w-5" aria-hidden="true"></i>'
+            : '<i data-lucide="menu" class="h-5 w-5" aria-hidden="true"></i>';
+
+          if (
+            window.lucide &&
+            typeof window.lucide.createIcons === "function"
+          ) {
+            window.lucide.createIcons();
+          }
+        };
+
+        if (menuButton) {
+          menuButton.addEventListener("click", () => {
+            const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+            setMenuState(!isOpen);
+          });
+        }
+
+        document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            setMenuState(false);
+          });
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 1024) {
+            setMenuState(false);
+          }
+        });
+
+        /* =====================================================
+           ESCAPE KEY — CLOSE MOBILE MENU
+        ====================================================== */
+        document.addEventListener("keydown", (event) => {
+          if (
+            event.key === "Escape" &&
+            menuButton &&
+            menuButton.getAttribute("aria-expanded") === "true"
+          ) {
+            setMenuState(false);
+            menuButton.focus();
+          }
+        });
+
+        /* =====================================================
+           SMOOTH SCROLL
+        ====================================================== */
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+          link.addEventListener("click", (event) => {
+            const targetId = link.getAttribute("href");
+
+            if (!targetId || targetId === "#" || targetId.length < 2) {
+              return;
+            }
+
+            const target = document.querySelector(targetId);
+
+            if (!target) {
+              return;
+            }
+
+            event.preventDefault();
+
+            const headerHeight = header ? header.offsetHeight : 0;
+
+            const targetPosition =
+              target.getBoundingClientRect().top +
+              window.scrollY -
+              headerHeight -
+              12;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+
+            window.history.replaceState(null, "", targetId);
+          });
+        });
+
+        /* =====================================================
+           COUNTER ANIMATION
+        ====================================================== */
+        const counters = document.querySelectorAll(".counter");
+
+        const animateCounter = (counter) => {
+          if (counter.dataset.animated === "true") {
+            return;
+          }
+
+          counter.dataset.animated = "true";
+
+          const target = Number(counter.dataset.target);
+          const suffix = counter.dataset.suffix || "";
+
+          if (!Number.isFinite(target)) {
+            return;
+          }
+
+          const duration = 1400;
+          const startTime = performance.now();
+
+          const updateCounter = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            /*
+             * Ease-out cubic
+             */
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+
+            const currentValue = Math.floor(easedProgress * target);
+
+            counter.textContent = currentValue.toLocaleString() + suffix;
+
+            if (progress < 1) {
+              window.requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target.toLocaleString() + suffix;
+            }
+          };
+
+          window.requestAnimationFrame(updateCounter);
+        };
+
+        if ("IntersectionObserver" in window) {
+          const counterObserver = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                  return;
+                }
+
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+              });
+            },
+            {
+              threshold: 0.35,
+            },
+          );
+
+          counters.forEach((counter) => {
+            counterObserver.observe(counter);
+          });
+        } else {
+          counters.forEach((counter) => {
+            animateCounter(counter);
+          });
+        }
+
+        /* =====================================================
+           CONTACT FORM
+           Front-end UX only.
+           Connect the form to your backend/API for production.
+        ====================================================== */
+        if (contactForm) {
+          contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            if (!contactForm.checkValidity()) {
+              contactForm.reportValidity();
+              return;
+            }
+
+            if (formStatus) {
+              formStatus.className =
+                "mt-5 rounded-xl border border-blue-500/20 bg-blue-500/10 px-4 py-3 text-sm text-blue-300";
+
+              formStatus.textContent =
+                "Thank you! Your message is ready to be submitted. Connect this form to your backend/API to process enquiries.";
+
+              formStatus.classList.remove("hidden");
+            }
+          });
+        }
+
+        /* =====================================================
+           REDUCED MOTION
+        ====================================================== */
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+
+        if (prefersReducedMotion) {
+          document.querySelectorAll(".animate-ping").forEach((element) => {
+            element.classList.remove("animate-ping");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

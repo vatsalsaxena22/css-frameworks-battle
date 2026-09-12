@@ -1,0 +1,2071 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- =========================================================
+         BASIC META
+    ========================================================== -->
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <meta
+      name="description"
+      content="We build powerful digital experiences through web development, digital marketing, graphic designing, and professional video production."
+    />
+
+    <meta
+      name="keywords"
+      content="web development, digital marketing, graphic designing, video production, digital agency, web design, SEO, branding"
+    />
+
+    <meta name="author" content="Your Company Name" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2196F3" />
+
+    <!-- =========================================================
+         CANONICAL
+    ========================================================== -->
+    <link rel="canonical" href="https://www.example.com/" />
+
+    <!-- =========================================================
+         OPEN GRAPH
+    ========================================================== -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Your Company Name — Digital Solutions That Drive Growth"
+    />
+    <meta
+      property="og:description"
+      content="Web development, digital marketing, graphic design, and video production under one roof."
+    />
+    <meta property="og:url" content="https://www.example.com/" />
+    <meta property="og:site_name" content="Your Company Name" />
+
+    <!-- =========================================================
+         FONTS
+    ========================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================================
+         W3.CSS
+    ========================================================== -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- =========================================================
+         CUSTOM PRODUCTION CSS
+    ========================================================== -->
+    <style>
+      /* =========================================================
+         GLOBAL
+      ========================================================== */
+
+      :root {
+        --primary: #2196f3;
+        --primary-dark: #0b7dda;
+        --navy: #0f172a;
+        --text: #0f172a;
+        --muted: #64748b;
+        --surface: #ffffff;
+        --surface-alt: #f8fafc;
+        --border: #e2e8f0;
+        --radius: 16px;
+        --header-height: 72px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: var(--header-height);
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+        background: var(--surface-alt);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        transition:
+          color 0.2s ease,
+          background-color 0.2s ease,
+          border-color 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      ::selection {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      /* =========================================================
+         ACCESSIBILITY
+      ========================================================== */
+
+      :focus-visible {
+        outline: 3px solid rgba(33, 150, 243, 0.45);
+        outline-offset: 3px;
+      }
+      /* =========================================================
+         HEADER
+      ========================================================== */
+
+      :root {
+        --header-height: 72px;
+        --header-bg: rgba(255, 255, 255, 0.96);
+        --header-border: rgba(15, 23, 42, 0.08);
+        --primary: #2196f3;
+        --primary-dark: #0b7dda;
+        --text: #0f172a;
+        --text-muted: #64748b;
+        --white: #ffffff;
+        --header-shadow: 0 2px 10px rgba(15, 23, 42, 0.08);
+        --transition-fast: 180ms ease;
+        --transition: 250ms ease;
+      }
+
+      /* =========================================================
+         HEADER WRAPPER
+========================================================= */
+
+      .site-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+      }
+
+      /* =========================================================
+   NAVBAR
+========================================================= */
+
+      .navbar {
+        height: var(--header-height);
+        background: var(--header-bg);
+        border-bottom: 1px solid var(--header-border);
+        box-shadow: var(--header-shadow);
+
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      /* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+      .header-container {
+        width: min(100% - 40px, 1400px);
+        height: 100%;
+        margin-inline: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* =========================================================
+   LOGO
+========================================================= */
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -0.045em;
+
+        text-decoration: none;
+        white-space: nowrap;
+
+        transition:
+          opacity var(--transition-fast),
+          transform var(--transition-fast);
+      }
+
+      .brand:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+
+      .brand-primary {
+        color: var(--primary);
+      }
+
+      .brand-secondary {
+        color: var(--text);
+      }
+
+      /* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+      .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      /* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+      .nav-link {
+        position: relative;
+
+        display: inline-flex;
+        align-items: center;
+
+        min-height: 44px;
+        padding: 0 16px;
+
+        color: var(--text);
+        font-size: 15px;
+        font-weight: 600;
+
+        text-decoration: none;
+        border-radius: 10px;
+
+        transition:
+          color var(--transition-fast),
+          background-color var(--transition-fast);
+      }
+
+      .nav-link:hover {
+        color: var(--primary);
+        background: rgba(33, 150, 243, 0.06);
+      }
+
+      /* =========================================================
+   ACTIVE NAVIGATION LINK
+========================================================= */
+
+      .nav-link.active {
+        color: var(--primary);
+      }
+
+      /* =========================================================
+   CONTACT CTA
+========================================================= */
+
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 44px;
+        margin-left: 8px;
+        padding: 0 20px;
+
+        color: var(--white);
+        background: var(--primary);
+
+        font-size: 15px;
+        font-weight: 700;
+
+        text-decoration: none;
+        border-radius: 10px;
+
+        box-shadow: 0 5px 15px rgba(33, 150, 243, 0.18);
+
+        transition:
+          background-color var(--transition-fast),
+          transform var(--transition-fast),
+          box-shadow var(--transition-fast);
+      }
+
+      .nav-cta:hover {
+        color: var(--white);
+        background: var(--primary-dark);
+
+        transform: translateY(-2px);
+
+        box-shadow: 0 8px 22px rgba(33, 150, 243, 0.25);
+      }
+
+      /* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+      .mobile-menu-button {
+        display: none;
+
+        width: 44px;
+        height: 44px;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+
+        color: var(--text);
+        background: transparent;
+
+        border: 0;
+        border-radius: 10px;
+
+        font-size: 20px;
+
+        cursor: pointer;
+
+        transition:
+          color var(--transition-fast),
+          background-color var(--transition-fast);
+      }
+
+      .mobile-menu-button:hover {
+        color: var(--primary);
+        background: rgba(33, 150, 243, 0.07);
+      }
+
+      /* =========================================================
+   MOBILE MENU
+========================================================= */
+
+      .mobile-menu {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        left: 0;
+
+        width: 100%;
+        max-height: calc(100vh - var(--header-height));
+
+        padding: 8px;
+
+        overflow-y: auto;
+
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid var(--header-border);
+
+        box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+          opacity var(--transition),
+          transform var(--transition),
+          visibility var(--transition);
+      }
+
+      /* =========================================================
+   MOBILE MENU OPEN
+========================================================= */
+
+      .mobile-menu.is-open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* =========================================================
+   MOBILE NAVIGATION LINKS
+========================================================= */
+
+      .mobile-nav-link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        min-height: 54px;
+        padding: 0 16px;
+
+        color: var(--text);
+        font-size: 15px;
+        font-weight: 600;
+
+        text-decoration: none;
+
+        border-radius: 10px;
+
+        transition:
+          color var(--transition-fast),
+          background-color var(--transition-fast);
+      }
+
+      .mobile-nav-link i {
+        width: 20px;
+
+        color: var(--text-muted);
+        text-align: center;
+
+        transition: color var(--transition-fast);
+      }
+
+      .mobile-nav-link:hover {
+        color: var(--primary);
+        background: rgba(33, 150, 243, 0.06);
+      }
+
+      .mobile-nav-link:hover i {
+        color: var(--primary);
+      }
+
+      /* =========================================================
+   MOBILE CTA
+========================================================= */
+
+      .mobile-nav-cta {
+        margin-top: 6px;
+
+        color: var(--white);
+        background: var(--primary);
+      }
+
+      .mobile-nav-cta i {
+        color: var(--white);
+      }
+
+      .mobile-nav-cta:hover {
+        color: var(--white);
+        background: var(--primary-dark);
+      }
+
+      .mobile-nav-cta:hover i {
+        color: var(--white);
+      }
+
+      /* =========================================================
+   TABLET
+========================================================= */
+
+      @media (max-width: 900px) {
+        .desktop-nav {
+          gap: 0;
+        }
+
+        .nav-link {
+          padding-inline: 12px;
+          font-size: 14px;
+        }
+
+        .nav-cta {
+          margin-left: 5px;
+          padding-inline: 16px;
+          font-size: 14px;
+        }
+      }
+
+      /* =========================================================
+   MOBILE
+========================================================= */
+
+      @media (max-width: 767px) {
+        :root {
+          --header-height: 64px;
+        }
+
+        .header-container {
+          width: min(100% - 28px, 1400px);
+        }
+
+        .brand {
+          font-size: 21px;
+        }
+
+        .desktop-nav {
+          display: none;
+        }
+
+        .mobile-menu-button {
+          display: inline-flex;
+        }
+      }
+
+      /* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+      @media (max-width: 380px) {
+        .header-container {
+          width: calc(100% - 20px);
+        }
+
+        .brand {
+          font-size: 19px;
+        }
+      }
+
+      /* =========================================================
+         HERO
+      ========================================================== */
+
+      .hero-section {
+        padding-top: calc(var(--header-height) + 48px) !important;
+        padding-bottom: 64px !important;
+      }
+
+      .hero-content {
+        width: 100%;
+      }
+
+      .hero-title {
+        max-width: 1100px;
+        margin: 20px 0;
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 800;
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+      }
+
+      .hero-description {
+        max-width: 900px;
+        line-height: 1.7;
+      }
+
+
+      .hero-button {
+        min-width: 180px;
+      }
+
+      /* =========================================================
+         GENERAL SECTION
+      ========================================================== */
+
+      .section {
+        scroll-margin-top: var(--header-height);
+      }
+
+      .section-heading {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .section-title {
+        font-size: clamp(2rem, 4vw, 3.25rem);
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.875rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      /* =========================================================
+         STATS
+      ========================================================== */
+
+      .stat-item {
+        height: 100%;
+        padding: 24px 16px;
+      }
+
+      .stat-number {
+        margin: 12px 0 4px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+      }
+
+      .stat-label {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      /* =========================================================
+         CARDS
+      ========================================================== */
+
+      .premium-card {
+        height: 100%;
+        padding: 24px !important;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      .premium-card .w3-row-padding {
+        margin-left: -8px;
+        margin-right: -8px;
+      }
+
+      .premium-card .w3-row-padding > [class*="w3-col"] {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+      }
+
+      .hero-card,
+      .contact-form {
+        padding: 24px !important;
+        border-radius: 8px;
+      }
+
+      .premium-card:hover {
+        border-color: rgba(33, 150, 243, 0.25);
+      }
+
+      .feature-card {
+        min-height: 100%;
+      }
+
+      .service-card {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .service-card p {
+        flex-grow: 1;
+      }
+
+      .service-icon {
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .w3-ul li {
+        border-color: var(--border) !important;
+      }
+
+      /* =========================================================
+         TESTIMONIALS
+      ========================================================== */
+
+      .testimonial-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .testimonial-content {
+        flex-grow: 1;
+      }
+
+      .testimonial-quote {
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      /* =========================================================
+         CONTACT
+      ========================================================== */
+
+      .contact-section {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-form {
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
+      }
+
+      .form-label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 700;
+        color: #334155;
+      }
+
+      .form-control {
+        min-height: 48px;
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .form-control:focus {
+        border-color: var(--primary) !important;
+        box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.12);
+      }
+
+      textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      /* =========================================================
+         SOCIAL BUTTONS
+      ========================================================== */
+
+      .social-button {
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+      }
+
+      /* =========================================================
+         FOOTER
+      ========================================================== */
+
+      .footer-link {
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        padding-left: 4px;
+      }
+
+      .back-to-top {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
+      }
+
+      /* =========================================================
+         REDUCED MOTION
+      ========================================================== */
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* =========================================================
+         MOBILE
+      ========================================================== */
+
+      @media (max-width: 767px) {
+        :root {
+          --header-height: 64px;
+        }
+
+        .hero-section {
+          padding-top: calc(var(--header-height) + 48px) !important;
+          padding-bottom: 64px !important;
+        }
+
+        .hero-title {
+          letter-spacing: -0.04em;
+        }
+
+        .hero-button {
+          width: 100%;
+          margin: 6px 0 !important;
+        }
+
+        .hero-visual {
+          padding-top: 16px !important;
+        }
+
+        .section-title {
+          letter-spacing: -0.03em;
+        }
+
+        .stat-item {
+          padding: 20px 8px;
+        }
+
+        .stat-number {
+          font-size: 2rem !important;
+        }
+
+        .w3-xlarge {
+          font-size: 1.1rem !important;
+        }
+
+        footer .w3-right-align {
+          text-align: left !important;
+          margin-top: 16px;
+        }
+      }
+    </style>
+
+    <!-- =========================================================
+         TITLE
+    ========================================================== -->
+    <title>VertexDigital — Digital Solutions That Drive Growth</title>
+
+    <!-- =========================================================
+         STRUCTURED DATA
+    ========================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VertexDigital",
+        "url": "https://www.VertexDigital.com/",
+        "description": "Digital agency providing web development, digital marketing, graphic designing and video production services.",
+        "email": "mailto:hello@example.com"
+      }
+    </script>
+  </head>
+
+  <body class="w3-light-grey">
+    <!-- =========================================================
+         HEADER / NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="header-container">
+          <!-- Logo -->
+          <a href="#home" class="brand" aria-label="VertexDigital Home">
+            <span class="brand-primary">Vertex</span
+            ><span class="brand-secondary">Digital</span>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="desktop-nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+
+            <a href="#contact" class="nav-cta"> Contact Us </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            type="button"
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+        <a href="#home" class="mobile-nav-link">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+          <span>Home</span>
+        </a>
+
+        <a href="#about" class="mobile-nav-link">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <span>About</span>
+        </a>
+
+        <a href="#services" class="mobile-nav-link">
+          <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+          <span>Services</span>
+        </a>
+
+        <a href="#testimonials" class="mobile-nav-link">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <span>Testimonials</span>
+        </a>
+
+        <a href="#contact" class="mobile-nav-link mobile-nav-cta">
+          <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          <span>Contact Us</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+      <!-- =========================================================
+           HERO
+      ========================================================== -->
+
+      <section id="home" class="w3-container w3-blue hero-section section">
+        <div class="w3-content" style="max-width: 1300px">
+          <div class="w3-row-padding">
+            <!-- Full-Width Hero Content -->
+            <div class="w3-col l12 m12 hero-content w3-padding-16">
+              <p
+                class="w3-tag w3-white w3-text-blue w3-round-large w3-padding-small"
+              >
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                &nbsp; DIGITAL SOLUTIONS FOR MODERN BUSINESSES
+              </p>
+
+              <h1 class="hero-title">
+                We Build Digital Experiences That
+                <span class="w3-text-white"> Move Businesses Forward. </span>
+              </h1>
+
+              <p class="w3-xlarge hero-description">
+                From high-performance websites to powerful marketing, stunning
+                graphics, and engaging videos — we turn ideas into digital
+                experiences that make an impact.
+              </p>
+
+              <div class="w3-margin-top">
+                <a
+                  href="#contact"
+                  class="w3-button w3-white w3-text-blue w3-round-large w3-padding-large w3-hover-light-grey w3-margin-right hero-button"
+                >
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  &nbsp; Start a Project
+                </a>
+
+                <a
+                  href="#services"
+                  class="w3-button w3-border-white w3-border w3-round-large w3-padding-large w3-hover-white w3-hover-text-blue hero-button"
+                >
+                  Explore Services &nbsp;
+                  <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           STATS
+      ========================================================== -->
+
+      <section class="w3-white w3-container w3-padding-64">
+        <div class="w3-content" style="max-width: 1200px">
+          <div class="w3-row-padding w3-center">
+            <div class="w3-col l3 m6 s6">
+              <div class="stat-item">
+                <i
+                  class="fa-solid fa-briefcase w3-xxxlarge w3-text-blue"
+                  aria-hidden="true"
+                ></i>
+                <h2 class="w3-xxxlarge stat-number">150+</h2>
+                <p class="stat-label">Projects Delivered</p>
+              </div>
+            </div>
+
+            <div class="w3-col l3 m6 s6">
+              <div class="stat-item">
+                <i
+                  class="fa-solid fa-users w3-xxxlarge w3-text-blue"
+                  aria-hidden="true"
+                ></i>
+                <h2 class="w3-xxxlarge stat-number">80+</h2>
+                <p class="stat-label">Happy Clients</p>
+              </div>
+            </div>
+
+            <div class="w3-col l3 m6 s6">
+              <div class="stat-item">
+                <i
+                  class="fa-solid fa-globe w3-xxxlarge w3-text-blue"
+                  aria-hidden="true"
+                ></i>
+                <h2 class="w3-xxxlarge stat-number">12+</h2>
+                <p class="stat-label">Countries Served</p>
+              </div>
+            </div>
+
+            <div class="w3-col l3 m6 s6">
+              <div class="stat-item">
+                <i
+                  class="fa-solid fa-award w3-xxxlarge w3-text-blue"
+                  aria-hidden="true"
+                ></i>
+                <h2 class="w3-xxxlarge stat-number">5+</h2>
+                <p class="stat-label">Years Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           ABOUT
+      ========================================================== -->
+
+      <section
+        id="about"
+        class="w3-light-grey w3-container w3-padding-64 section"
+      >
+        <div class="w3-content" style="max-width: 1250px">
+          <div class="w3-row-padding">
+            <div class="w3-col l6 m6 w3-padding-32">
+              <span class="w3-text-blue eyebrow">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                ABOUT US
+              </span>
+
+              <h2 class="section-title">
+                We Combine Creativity, Technology & Strategy.
+              </h2>
+
+              <p class="w3-large w3-text-grey">
+                We are a digital solutions company helping ambitious businesses
+                build stronger brands and better digital experiences.
+              </p>
+
+              <p class="w3-large w3-text-grey">
+                Our multidisciplinary team brings together developers,
+                designers, marketers, and creative professionals to deliver
+                everything your business needs to grow online.
+              </p>
+
+              <a
+                href="#contact"
+                class="w3-button w3-blue w3-round-large w3-padding-large"
+              >
+                Learn More &nbsp;
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="w3-col l6 m6 w3-padding-32">
+              <div class="w3-card-4 w3-white premium-card">
+                <div class="w3-row-padding">
+                  <div class="w3-col s6">
+                    <div class="w3-center w3-padding-24 feature-card">
+                      <i
+                        class="fa-solid fa-lightbulb w3-xxxlarge w3-text-blue"
+                        aria-hidden="true"
+                      ></i>
+                      <h3 class="w3-large">Innovation</h3>
+                      <p class="w3-text-grey">
+                        Fresh ideas and modern solutions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="w3-col s6">
+                    <div class="w3-center w3-padding-24 feature-card">
+                      <i
+                        class="fa-solid fa-bullseye w3-xxxlarge w3-text-blue"
+                        aria-hidden="true"
+                      ></i>
+                      <h3 class="w3-large">Results</h3>
+                      <p class="w3-text-grey">
+                        Focused on measurable outcomes.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="w3-col s6">
+                    <div class="w3-center w3-padding-24 feature-card">
+                      <i
+                        class="fa-solid fa-handshake w3-xxxlarge w3-text-blue"
+                        aria-hidden="true"
+                      ></i>
+                      <h3 class="w3-large">Partnership</h3>
+                      <p class="w3-text-grey">
+                        Long-term relationships matter.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="w3-col s6">
+                    <div class="w3-center w3-padding-24 feature-card">
+                      <i
+                        class="fa-solid fa-shield-halved w3-xxxlarge w3-text-blue"
+                        aria-hidden="true"
+                      ></i>
+                      <h3 class="w3-large">Reliability</h3>
+                      <p class="w3-text-grey">Quality you can depend on.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           SERVICES
+      ========================================================== -->
+
+      <section
+        id="services"
+        class="w3-white w3-container w3-padding-64 section"
+      >
+        <div class="w3-content" style="max-width: 1300px">
+          <div class="w3-center section-heading">
+            <span class="w3-text-blue eyebrow">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              OUR SERVICES
+            </span>
+
+            <h2 class="section-title">
+              Everything You Need To
+              <span class="w3-text-blue"> Grow Digitally. </span>
+            </h2>
+
+            <p class="w3-xlarge w3-text-grey">
+              One team. Four powerful capabilities.
+            </p>
+          </div>
+
+          <div class="w3-row-padding w3-margin-top">
+            <!-- Web Development -->
+            <div class="w3-col l3 m6 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card service-card">
+                <div class="w3-center">
+                  <div class="service-icon">
+                    <i
+                      class="fa-solid fa-code w3-jumbo w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+
+                  <h3 class="w3-xlarge">Web Development</h3>
+                </div>
+
+                <p class="w3-text-grey">
+                  Fast, responsive, secure, and scalable websites engineered to
+                  deliver exceptional user experiences.
+                </p>
+
+                <ul class="w3-ul w3-text-grey">
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Business Websites
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; E-Commerce
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Web Applications
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; API Development
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="w3-col l3 m6 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card service-card">
+                <div class="w3-center">
+                  <div class="service-icon">
+                    <i
+                      class="fa-solid fa-chart-line w3-jumbo w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+
+                  <h3 class="w3-xlarge">Digital Marketing</h3>
+                </div>
+
+                <p class="w3-text-grey">
+                  Data-driven marketing strategies designed to increase
+                  visibility, traffic, engagement, and conversions.
+                </p>
+
+                <ul class="w3-ul w3-text-grey">
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; SEO
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Social Media
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Paid Advertising
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Content Strategy
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="w3-col l3 m6 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card service-card">
+                <div class="w3-center">
+                  <div class="service-icon">
+                    <i
+                      class="fa-solid fa-pen-nib w3-jumbo w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+
+                  <h3 class="w3-xlarge">Graphic Designing</h3>
+                </div>
+
+                <p class="w3-text-grey">
+                  Memorable visual identities and creative designs that make
+                  your brand instantly recognizable.
+                </p>
+
+                <ul class="w3-ul w3-text-grey">
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Brand Identity
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Social Media Designs
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Marketing Materials
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; UI/UX Design
+                  </li>
+                </ul>
+              </article>
+            </div>
+
+            <!-- Video Production -->
+            <div class="w3-col l3 m6 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card service-card">
+                <div class="w3-center">
+                  <div class="service-icon">
+                    <i
+                      class="fa-solid fa-video w3-jumbo w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+
+                  <h3 class="w3-xlarge">Video Production</h3>
+                </div>
+
+                <p class="w3-text-grey">
+                  High-quality video content that captures attention, tells your
+                  story, and strengthens your brand.
+                </p>
+
+                <ul class="w3-ul w3-text-grey">
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Promotional Videos
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Social Media Videos
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Corporate Videos
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-solid fa-check w3-text-blue"
+                      aria-hidden="true"
+                    ></i>
+                    &nbsp; Video Editing
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           TESTIMONIALS
+      ========================================================== -->
+
+      <section
+        id="testimonials"
+        class="w3-light-grey w3-container w3-padding-64 section"
+      >
+        <div class="w3-content" style="max-width: 1200px">
+          <div class="w3-center section-heading">
+            <span class="w3-text-blue eyebrow">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              TESTIMONIALS
+            </span>
+
+            <h2 class="section-title">What Our Clients Say</h2>
+          </div>
+
+          <div class="w3-row-padding w3-margin-top">
+            <!-- Testimonial 1 -->
+            <div class="w3-col l4 m4 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card testimonial-card">
+                <div class="testimonial-content">
+                  <div
+                    class="w3-text-amber w3-large"
+                    aria-label="5 out of 5 stars"
+                  >
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="testimonial-quote w3-text-grey">
+                    "The team transformed our online presence completely. The
+                    new website is faster, cleaner, and has already helped us
+                    generate more enquiries."
+                  </p>
+                </div>
+
+                <hr />
+
+                <div>
+                  <i
+                    class="fa-solid fa-circle-user w3-xxxlarge w3-text-blue"
+                    aria-hidden="true"
+                  ></i>
+
+                  <strong>Rahul Sharma</strong>
+
+                  <br />
+
+                  <span class="w3-text-grey"> Founder, Business Company </span>
+                </div>
+              </article>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="w3-col l4 m4 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card testimonial-card">
+                <div class="testimonial-content">
+                  <div
+                    class="w3-text-amber w3-large"
+                    aria-label="5 out of 5 stars"
+                  >
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="testimonial-quote w3-text-grey">
+                    "Professional, creative, and extremely responsive. They
+                    understood our vision and delivered beyond expectations."
+                  </p>
+                </div>
+
+                <hr />
+
+                <div>
+                  <i
+                    class="fa-solid fa-circle-user w3-xxxlarge w3-text-blue"
+                    aria-hidden="true"
+                  ></i>
+
+                  <strong>Priya Mehta</strong>
+
+                  <br />
+
+                  <span class="w3-text-grey"> Marketing Director </span>
+                </div>
+              </article>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="w3-col l4 m4 s12 w3-padding">
+              <article class="w3-card-4 w3-white premium-card testimonial-card">
+                <div class="testimonial-content">
+                  <div
+                    class="w3-text-amber w3-large"
+                    aria-label="5 out of 5 stars"
+                  >
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  </div>
+
+                  <p class="testimonial-quote w3-text-grey">
+                    "From branding to marketing, everything was handled under
+                    one roof. A fantastic partner for our growth."
+                  </p>
+                </div>
+
+                <hr />
+
+                <div>
+                  <i
+                    class="fa-solid fa-circle-user w3-xxxlarge w3-text-blue"
+                    aria-hidden="true"
+                  ></i>
+
+                  <strong>Arjun Kapoor</strong>
+
+                  <br />
+
+                  <span class="w3-text-grey"> CEO, Digital Startup </span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           CONTACT
+      ========================================================== -->
+
+      <section
+        id="contact"
+        class="w3-blue w3-container w3-padding-64 contact-section section"
+      >
+        <div class="w3-content" style="max-width: 1200px">
+          <div class="w3-row-padding">
+            <!-- Contact Information -->
+            <div class="w3-col l5 m5 w3-padding-32">
+              <span class="eyebrow">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                CONTACT US
+              </span>
+
+              <h2 class="section-title">
+                Let's Build Something Great Together.
+              </h2>
+
+              <p class="w3-large">
+                Have an idea, project, or business challenge? Tell us about it
+                and our team will get back to you.
+              </p>
+
+              <div class="w3-margin-top">
+                <p>
+                  <i
+                    class="fa-solid fa-envelope fa-fw w3-xlarge"
+                    aria-hidden="true"
+                  ></i>
+                  &nbsp;
+                  <a href="mailto:hello@example.com" class="w3-text-white">
+                    hello@example.com
+                  </a>
+                </p>
+
+                <p>
+                  <i
+                    class="fa-solid fa-phone fa-fw w3-xlarge"
+                    aria-hidden="true"
+                  ></i>
+                  &nbsp;
+                  <a href="tel:+919876543210" class="w3-text-white">
+                    +91 98765 43210
+                  </a>
+                </p>
+
+                <p>
+                  <i
+                    class="fa-solid fa-location-dot fa-fw w3-xlarge"
+                    aria-hidden="true"
+                  ></i>
+                  &nbsp; New Delhi, India
+                </p>
+              </div>
+
+              <div class="w3-margin-top">
+                <a
+                  href="#"
+                  class="w3-button w3-white w3-text-blue w3-circle w3-margin-right social-button"
+                  aria-label="Facebook"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="w3-button w3-white w3-text-blue w3-circle w3-margin-right social-button"
+                  aria-label="Instagram"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="w3-button w3-white w3-text-blue w3-circle w3-margin-right social-button"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="w3-button w3-white w3-text-blue w3-circle social-button"
+                  aria-label="YouTube"
+                >
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="w3-col l7 m7 w3-padding-32">
+              <div class="w3-card-4 w3-white contact-form">
+                <form id="contactForm" action="#" method="post">
+                  <div class="w3-row-padding">
+                    <div class="w3-half w3-margin-bottom">
+                      <label for="name" class="form-label"> Full Name </label>
+
+                      <input
+                        id="name"
+                        name="name"
+                        class="w3-input w3-border w3-round-large form-control"
+                        type="text"
+                        placeholder="Your name"
+                        autocomplete="name"
+                        minlength="2"
+                        maxlength="100"
+                        required
+                      />
+                    </div>
+
+                    <div class="w3-half w3-margin-bottom">
+                      <label for="email" class="form-label">
+                        Email Address
+                      </label>
+
+                      <input
+                        id="email"
+                        name="email"
+                        class="w3-input w3-border w3-round-large form-control"
+                        type="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        maxlength="150"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="w3-row-padding">
+                    <div class="w3-half w3-margin-bottom">
+                      <label for="phone" class="form-label">
+                        Phone Number
+                      </label>
+
+                      <input
+                        id="phone"
+                        name="phone"
+                        class="w3-input w3-border w3-round-large form-control"
+                        type="tel"
+                        placeholder="+91 XXXXX XXXXX"
+                        autocomplete="tel"
+                        maxlength="20"
+                      />
+                    </div>
+
+                    <div class="w3-half w3-margin-bottom">
+                      <label for="service" class="form-label"> Service </label>
+
+                      <select
+                        id="service"
+                        name="service"
+                        class="w3-select w3-border w3-round-large form-control"
+                      >
+                        <option value="" disabled selected>
+                          Select a service
+                        </option>
+
+                        <option value="web-development">Web Development</option>
+
+                        <option value="digital-marketing">
+                          Digital Marketing
+                        </option>
+
+                        <option value="graphic-designing">
+                          Graphic Designing
+                        </option>
+
+                        <option value="video-production">
+                          Video Production
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="w3-padding">
+                    <label for="message" class="form-label">
+                      Project Details
+                    </label>
+
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="w3-input w3-border w3-round-large form-control"
+                      rows="6"
+                      placeholder="Tell us about your project..."
+                      minlength="10"
+                      maxlength="3000"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="w3-padding">
+                    <button
+                      type="submit"
+                      id="submitButton"
+                      class="w3-button w3-blue w3-round-large w3-padding-large w3-block"
+                    >
+                      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                      &nbsp; Send Enquiry
+                    </button>
+                  </div>
+
+                  <div
+                    id="formMessage"
+                    class="w3-panel w3-pale-green w3-text-blue w3-round-large w3-hide"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    Thank you! Your enquiry has been received.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="w3-black w3-container w3-padding-64">
+      <div class="w3-content" style="max-width: 1250px">
+        <div class="w3-row-padding">
+          <!-- Company -->
+          <div class="w3-col l4 m6 w3-padding">
+            <h2 class="brand">Vertex<span class="w3-text-blue">Digital</span></h2>
+
+            <p class="w3-text-grey w3-large">
+              Building brands, websites, campaigns, and digital experiences that
+              make businesses stand out.
+            </p>
+
+            <div>
+              <a
+                href="#"
+                class="w3-text-grey w3-hover-text-white w3-large w3-margin-right"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w3-text-grey w3-hover-text-white w3-large w3-margin-right"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w3-text-grey w3-hover-text-white w3-large w3-margin-right"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w3-text-grey w3-hover-text-white w3-large"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="w3-col l2 m6 w3-padding">
+            <h3 class="w3-large">Quick Links</h3>
+
+            <a
+              href="#home"
+              class="w3-text-grey w3-hover-text-white w3-block w3-padding-small footer-link"
+            >
+              Home
+            </a>
+
+            <a
+              href="#about"
+              class="w3-text-grey w3-hover-text-white w3-block w3-padding-small footer-link"
+            >
+              About
+            </a>
+
+            <a
+              href="#services"
+              class="w3-text-grey w3-hover-text-white w3-block w3-padding-small footer-link"
+            >
+              Services
+            </a>
+
+            <a
+              href="#testimonials"
+              class="w3-text-grey w3-hover-text-white w3-block w3-padding-small footer-link"
+            >
+              Testimonials
+            </a>
+
+            <a
+              href="#contact"
+              class="w3-text-grey w3-hover-text-white w3-block w3-padding-small footer-link"
+            >
+              Contact
+            </a>
+          </div>
+
+          <!-- Services -->
+          <div class="w3-col l3 m6 w3-padding">
+            <h3 class="w3-large">Services</h3>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-code fa-fw" aria-hidden="true"></i>
+              Web Development
+            </p>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-chart-line fa-fw" aria-hidden="true"></i>
+              Digital Marketing
+            </p>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-pen-nib fa-fw" aria-hidden="true"></i>
+              Graphic Designing
+            </p>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-video fa-fw" aria-hidden="true"></i>
+              Video Production
+            </p>
+          </div>
+
+          <!-- Contact -->
+          <div class="w3-col l3 m6 w3-padding">
+            <h3 class="w3-large">Get In Touch</h3>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i>
+              <a
+                href="mailto:hello@example.com"
+                class="w3-text-grey w3-hover-text-white"
+              >
+                hello@example.com
+              </a>
+            </p>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-phone fa-fw" aria-hidden="true"></i>
+              <a
+                href="tel:+919876543210"
+                class="w3-text-grey w3-hover-text-white"
+              >
+                +91 98765 43210
+              </a>
+            </p>
+
+            <p class="w3-text-grey">
+              <i class="fa-solid fa-location-dot fa-fw" aria-hidden="true"></i>
+              New Delhi, India
+            </p>
+          </div>
+        </div>
+
+        <hr class="w3-border-grey" />
+
+        <div class="w3-row">
+          <div class="w3-half">
+            <p class="w3-text-grey">
+              &copy;
+              <span id="currentYear"></span>
+              VertexDigital. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="w3-half w3-right-align">
+            <a
+              href="#"
+              class="w3-text-grey w3-hover-text-white w3-margin-right footer-link"
+            >
+              Privacy Policy
+            </a>
+
+            <a href="#" class="w3-text-grey w3-hover-text-white footer-link">
+              Terms &amp; Conditions
+            </a>
+          </div>
+        </div>
+
+        <div class="w3-center w3-margin-top">
+          <a
+            href="#home"
+            class="w3-button w3-blue w3-circle back-to-top"
+            aria-label="Back to top"
+          >
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+      "use strict";
+
+      /* =========================================================
+         MOBILE NAVIGATION
+      ========================================================== */
+
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileMenuButton = document.getElementById("mobileMenuButton");
+
+      function toggleMobileMenu() {
+        const isOpen = mobileMenu.classList.contains("is-open");
+
+        if (isOpen) {
+          closeMobileMenu();
+          return;
+        }
+
+        mobileMenu.classList.add("is-open");
+        mobileMenu.setAttribute("aria-hidden", "false");
+        mobileMenuButton.setAttribute("aria-expanded", "true");
+        mobileMenuButton.setAttribute("aria-label", "Close navigation menu");
+        mobileMenuButton.innerHTML =
+          '<i class="fa-solid fa-xmark" aria-hidden="true"></i>';
+      }
+
+      function closeMobileMenu() {
+        mobileMenu.classList.remove("is-open");
+        mobileMenu.setAttribute("aria-hidden", "true");
+        mobileMenuButton.setAttribute("aria-expanded", "false");
+        mobileMenuButton.setAttribute("aria-label", "Open navigation menu");
+        mobileMenuButton.innerHTML =
+          '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+      }
+
+      mobileMenuButton.addEventListener("click", toggleMobileMenu);
+
+      /* =========================================================
+         CLOSE MOBILE MENU ON RESIZE
+      ========================================================== */
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 768) {
+          closeMobileMenu();
+        }
+      });
+
+      /* =========================================================
+         CURRENT YEAR
+      ========================================================== */
+
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      /* =========================================================
+         CONTACT FORM
+         Frontend demonstration only.
+      ========================================================== */
+
+      const contactForm = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+      const submitButton = document.getElementById("submitButton");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
+
+        submitButton.disabled = true;
+
+        submitButton.innerHTML =
+          '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>' +
+          " &nbsp; Sending...";
+
+        /*
+         * Replace this simulated timeout with your real API request.
+         */
+
+        setTimeout(function () {
+          formMessage.classList.remove("w3-hide");
+
+          contactForm.reset();
+
+          submitButton.disabled = false;
+
+          submitButton.innerHTML =
+            '<i class="fa-solid fa-paper-plane" aria-hidden="true"></i>' +
+            " &nbsp; Send Enquiry";
+
+          setTimeout(function () {
+            formMessage.classList.add("w3-hide");
+          }, 5000);
+        }, 800);
+      });
+
+      /* =========================================================
+         ESC KEY
+         Close mobile navigation.
+      ========================================================== */
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeMobileMenu();
+        }
+      });
+
+      /* =========================================================
+         SMOOTH SCROLLING
+      ========================================================== */
+
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener("click", function (event) {
+          const targetId = this.getAttribute("href");
+
+          if (!targetId || targetId === "#") {
+            return;
+          }
+
+          const target = document.querySelector(targetId);
+
+          if (!target) {
+            return;
+          }
+
+          event.preventDefault();
+
+          target.scrollIntoView({
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
+              .matches
+              ? "auto"
+              : "smooth",
+            block: "start",
+          });
+
+          closeMobileMenu();
+        });
+      });
+    </script>
+  </body>
+</html>

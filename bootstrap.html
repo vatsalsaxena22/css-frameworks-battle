@@ -1,0 +1,1981 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- =========================================================
+         BASIC META
+    ========================================================== -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      VertexDigital | Web Development, Digital Marketing & Creative Services
+    </title>
+
+    <meta
+      name="description"
+      content="VertexDigital provides professional web development, digital marketing, graphic designing, and video production services to help businesses build, grow, and scale online."
+    />
+
+    <meta
+      name="keywords"
+      content="web development, digital marketing, graphic designing, video production, digital agency, web design, SEO, branding"
+    />
+
+    <meta name="author" content="VertexDigital" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#212529" />
+
+    <!-- =========================================================
+         CANONICAL
+         Replace with your real production URL
+    ========================================================== -->
+    <link rel="canonical" href="https://www.VertexDigital.com/" />
+
+    <!-- =========================================================
+         OPEN GRAPH
+    ========================================================== -->
+    <meta
+      property="og:title"
+      content="VertexDigital | Digital Solutions That Drive Growth"
+    />
+
+    <meta
+      property="og:description"
+      content="Web development, digital marketing, graphic designing, and video production services for modern businesses."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.VertexDigital.com/" />
+
+    <!-- Replace with your actual OG image -->
+    <meta
+      property="og:image"
+      content="https://www.VertexDigital.com/assets/images/og-image.jpg"
+    />
+
+    <!-- =========================================================
+         TWITTER / X CARD
+    ========================================================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="VertexDigital | Digital Solutions That Drive Growth"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Professional web development, digital marketing, graphic designing, and video production services."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://www.VertexDigital.com/assets/images/og-image.jpg"
+    />
+
+    <!-- =========================================================
+         FAVICON
+         Replace with your actual favicon
+    ========================================================== -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- =========================================================
+         BOOTSTRAP 5.3.3
+    ========================================================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- =========================================================
+         BOOTSTRAP ICONS 1.11.3
+         
+         IMPORTANT:
+         No invalid SRI hash is used here.
+         ========================================================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      /* =========================================================
+         RESPONSIVE / PRODUCTION UI LAYER
+         ========================================================= */
+
+      :root {
+        --site-gutter: clamp(1rem, 3vw, 2rem);
+        --section-space: clamp(3.5rem, 8vw, 6rem);
+        --card-radius: 1rem;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+        overflow-x: hidden;
+      }
+
+      body {
+        min-width: 320px;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img,
+      svg,
+      video,
+      canvas {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      /* Prevent long content from creating horizontal overflow. */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      li,
+      small,
+      span,
+      strong,
+      blockquote {
+        overflow-wrap: anywhere;
+      }
+
+      /* Consistent responsive section rhythm. */
+      main > section > .container {
+        padding-top: var(--section-space) !important;
+        padding-bottom: var(--section-space) !important;
+      }
+
+      /* Header */
+      header .navbar {
+        min-height: 4.5rem;
+      }
+
+      .navbar-brand {
+        white-space: nowrap;
+        max-width: calc(100vw - 5.5rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .navbar-toggler {
+        flex: 0 0 auto;
+      }
+
+      .navbar-collapse {
+        min-width: 0;
+      }
+
+      /* Hero */
+      #home {
+        min-height: auto;
+      }
+
+      #home .container {
+        padding-left: var(--site-gutter);
+        padding-right: var(--site-gutter);
+      }
+
+      #hero-title {
+        font-size: clamp(2.25rem, 6vw, 4.5rem);
+        line-height: 1.05;
+      }
+
+      #home .lead {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+      }
+
+      #home .btn {
+        white-space: normal;
+      }
+
+      /* Hero visual should never become wider than its column. */
+      #home .bg-primary.bg-opacity-25 {
+        min-width: 0;
+      }
+
+      #home .bg-primary.bg-opacity-25 > .bg-dark {
+        min-width: 0;
+      }
+
+      /* Stats */
+      section[aria-label="Company statistics"] h2 {
+        font-size: clamp(1.75rem, 4vw, 2.75rem);
+      }
+
+      section[aria-label="Company statistics"] p {
+        font-size: clamp(0.875rem, 1.8vw, 1rem);
+      }
+
+      /* Typography */
+      .display-5 {
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      .display-6 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+      }
+
+      /* Cards */
+      .card {
+        min-width: 0;
+      }
+
+      .card-body,
+      .card-footer {
+        min-width: 0;
+      }
+
+      /* Contact information */
+      #contact .d-flex {
+        min-width: 0;
+      }
+
+      #contact .d-flex > div:last-child {
+        min-width: 0;
+      }
+
+      #contact a[href^="mailto"],
+      #contact a[href^="tel"] {
+        overflow-wrap: anywhere;
+      }
+
+      textarea.form-control {
+        min-height: 9rem;
+        resize: vertical;
+      }
+
+      /* Footer */
+      footer {
+        overflow: hidden;
+      }
+
+      footer .d-flex {
+        min-width: 0;
+      }
+
+      footer p,
+      footer a {
+        overflow-wrap: anywhere;
+      }
+
+      /* Floating button stays clear of mobile viewport edges. */
+      .position-fixed.bottom-0.end-0 {
+        padding: 0.75rem !important;
+      }
+
+      .position-fixed.bottom-0.end-0 .btn {
+        width: 2.75rem;
+        height: 2.75rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Small phones */
+      @media (max-width: 575.98px) {
+        :root {
+          --site-gutter: 1rem;
+        }
+
+        .container {
+          padding-left: var(--site-gutter);
+          padding-right: var(--site-gutter);
+        }
+
+        header .navbar {
+          min-height: 4rem;
+        }
+
+        .navbar-brand {
+          font-size: 1.15rem !important;
+        }
+
+        .navbar-brand .bi {
+          margin-right: 0.35rem !important;
+        }
+
+        .navbar-collapse {
+          padding: 0.75rem 0 1rem;
+        }
+
+        .navbar-nav {
+          gap: 0.15rem !important;
+        }
+
+        .navbar-nav .nav-link {
+          padding: 0.65rem 0.25rem;
+        }
+
+        .navbar-nav .btn {
+          width: 100%;
+          margin-top: 0.35rem;
+        }
+
+        #home .container {
+          padding-top: 3rem !important;
+          padding-bottom: 3.5rem !important;
+        }
+
+        #home .badge {
+          font-size: 0.78rem;
+        }
+
+        #hero-title {
+          font-size: clamp(2rem, 10vw, 2.8rem);
+          margin-bottom: 1.25rem !important;
+        }
+
+        #home .lead {
+          font-size: 1rem;
+          line-height: 1.65;
+        }
+
+        #home .d-flex.flex-column.flex-sm-row {
+          width: 100%;
+        }
+
+        #home .d-flex.flex-column.flex-sm-row .btn {
+          width: 100%;
+        }
+
+        #home .d-flex.flex-wrap.gap-4 {
+          gap: 0.9rem 1.25rem !important;
+          font-size: 0.9rem;
+        }
+
+        #home .col-lg-5 > div {
+          padding: 0.75rem !important;
+        }
+
+        #home .col-lg-5 > div > div {
+          padding: 1rem !important;
+        }
+
+        #home .col-lg-5 .bg-secondary {
+          padding: 1rem !important;
+        }
+
+        #home .col-lg-5 .d-flex.align-items-center.gap-3 {
+          align-items: flex-start !important;
+        }
+
+        #home .col-lg-5 .d-flex.align-items-center.gap-3 > div:first-child {
+          flex: 0 0 auto;
+          padding: 0.75rem !important;
+        }
+
+        main > section > .container {
+          padding-top: 3.5rem !important;
+          padding-bottom: 3.5rem !important;
+        }
+
+        section[aria-label="Company statistics"] > .container {
+          padding-top: 2.75rem !important;
+          padding-bottom: 2.75rem !important;
+        }
+
+        section[aria-label="Company statistics"] .fs-1 {
+          font-size: 1.75rem !important;
+        }
+
+        section[aria-label="Company statistics"] h2 {
+          font-size: 1.75rem;
+        }
+
+        section[aria-label="Company statistics"] p {
+          font-size: 0.82rem;
+        }
+
+        #about .bg-dark {
+          padding: 1.5rem !important;
+        }
+
+        #about .bg-dark .p-4 {
+          padding: 1rem !important;
+        }
+
+        #about .row.g-4.mt-3 > [class*="col-"] {
+          margin-bottom: 0.25rem;
+        }
+
+        #about .btn,
+        #contact .btn {
+          width: 100%;
+        }
+
+        #services .text-center p,
+        #testimonials .text-center p {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+
+        #services .card-body {
+          padding: 1.25rem !important;
+        }
+
+        #services .card-footer {
+          padding-left: 1.25rem !important;
+          padding-right: 1.25rem !important;
+        }
+
+        #services .card h3 {
+          font-size: 1.25rem;
+        }
+
+        #why-title {
+          font-size: 2rem;
+          line-height: 1.15;
+        }
+
+        #testimonials .card-body {
+          padding: 1.25rem !important;
+        }
+
+        #testimonials blockquote {
+          font-size: 1rem !important;
+          line-height: 1.65;
+        }
+
+        #cta-title {
+          font-size: 1.9rem;
+          line-height: 1.2;
+        }
+
+        #cta .btn {
+          width: 100%;
+        }
+
+        #contact .lead {
+          margin-bottom: 2rem !important;
+        }
+
+        #contact .card-body {
+          padding: 1.25rem !important;
+        }
+
+        #contact .row.g-3 {
+          --bs-gutter-y: 1rem;
+        }
+
+        #contact .form-control-lg,
+        #contact .form-select-lg {
+          font-size: 1rem;
+          min-height: 3rem;
+        }
+
+        #contact textarea.form-control {
+          min-height: 10rem;
+        }
+
+        footer .container {
+          padding-top: 3rem !important;
+          padding-bottom: 3rem !important;
+        }
+
+        footer .row.g-5 {
+          --bs-gutter-y: 2.25rem;
+        }
+
+        footer .col-6 {
+          width: 50%;
+        }
+
+        footer .d-flex.flex-wrap.gap-3 {
+          justify-content: flex-start;
+        }
+
+        footer > .container > .d-flex {
+          align-items: flex-start !important;
+        }
+      }
+
+      /* Very narrow phones */
+      @media (max-width: 374.98px) {
+        .navbar-brand {
+          font-size: 1.05rem !important;
+        }
+
+        #hero-title {
+          font-size: 1.9rem;
+        }
+
+        #home .badge {
+          white-space: normal;
+          text-align: left;
+        }
+
+        #home .d-flex.flex-wrap.gap-4 {
+          display: grid !important;
+          grid-template-columns: 1fr;
+          gap: 0.7rem !important;
+        }
+
+        section[aria-label="Company statistics"] .row {
+          --bs-gutter-x: 0.75rem;
+        }
+
+        section[aria-label="Company statistics"] p {
+          font-size: 0.78rem;
+        }
+
+        footer .col-6 {
+          width: 100%;
+        }
+      }
+
+      /* Tablets / small laptops */
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        #hero-title {
+          font-size: clamp(2.75rem, 7vw, 4rem);
+        }
+
+        #home .d-flex.flex-column.flex-sm-row .btn {
+          flex: 1 1 0;
+        }
+
+        #about .bg-dark {
+          padding: 2rem !important;
+        }
+      }
+
+      /* Desktop nav gets a little more breathing room. */
+      @media (min-width: 992px) {
+        .navbar .navbar-nav .nav-link {
+          padding-left: 0.65rem;
+          padding-right: 0.65rem;
+        }
+      }
+
+      /* Respect users who prefer reduced motion. */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Better keyboard visibility. */
+      :focus-visible {
+        outline: 3px solid rgba(13, 110, 253, 0.45);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-light"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNavbar"
+    data-bs-offset="90"
+    tabindex="0"
+  >
+    <!-- =========================================================
+         HEADER / STICKY NAVBAR
+         
+         sticky-top is intentionally placed on HEADER.
+    ========================================================== -->
+    <header class="sticky-top z-3">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark shadow"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <!-- Brand -->
+          <a
+            class="navbar-brand fw-bold fs-4"
+            href="#home"
+            aria-label="VertexDigital home"
+          >
+            <i class="bi bi-buildings-fill me-2" aria-hidden="true"></i>
+            <span class="text-primary">Vertex</span>Digital
+          </a>
+
+          <!-- Mobile Navigation Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home"> Home </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#services"> Services </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials"> Testimonials </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact </a>
+              </li>
+
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <a href="#contact" class="btn btn-primary px-4">
+                  Let's Talk
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+    <main>
+      <!-- =====================================================
+             HERO
+        ====================================================== -->
+      <section
+        id="home"
+        class="bg-dark text-white py-5"
+        aria-labelledby="hero-title"
+      >
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <!-- Hero Content -->
+            <div class="col-lg-7">
+              <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-4">
+                <i class="bi bi-stars me-1" aria-hidden="true"></i>
+                Creative Digital Solutions
+              </span>
+
+              <h1 id="hero-title" class="display-3 fw-bold lh-1 mb-4">
+                We Build Digital Experiences That
+                <span class="text-primary"> Move Businesses Forward. </span>
+              </h1>
+
+              <p class="lead text-white-50 mb-4">
+                From powerful websites to strategic digital marketing,
+                compelling designs, and engaging videos — we help brands stand
+                out, connect with customers, and grow.
+              </p>
+
+              <div class="d-flex flex-column flex-sm-row gap-3">
+                <a href="#services" class="btn btn-primary btn-lg px-4">
+                  Explore Our Services
+                  <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                </a>
+
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+                  Start a Project
+                </a>
+              </div>
+
+              <div class="d-flex flex-wrap gap-4 mt-5 text-white-50">
+                <span>
+                  <i
+                    class="bi bi-check-circle-fill text-primary me-2"
+                    aria-hidden="true"
+                  ></i>
+                  Professional Team
+                </span>
+
+                <span>
+                  <i
+                    class="bi bi-check-circle-fill text-primary me-2"
+                    aria-hidden="true"
+                  ></i>
+                  Quality Driven
+                </span>
+
+                <span>
+                  <i
+                    class="bi bi-check-circle-fill text-primary me-2"
+                    aria-hidden="true"
+                  ></i>
+                  Client Focused
+                </span>
+              </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="col-lg-5">
+              <div
+                class="bg-primary bg-opacity-25 border border-primary rounded-4 p-4 shadow-lg"
+              >
+                <div class="bg-dark border border-secondary rounded-4 p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <div>
+                      <small class="text-white-50"> Digital Growth </small>
+
+                      <h2 class="h4 fw-bold mb-0">Your Vision</h2>
+                    </div>
+
+                    <span class="badge text-bg-success">
+                      <i
+                        class="bi bi-graph-up-arrow me-1"
+                        aria-hidden="true"
+                      ></i>
+                      Growing
+                    </span>
+                  </div>
+
+                  <div class="bg-secondary bg-opacity-25 rounded-3 p-4 mb-3">
+                    <div class="row g-3 text-center">
+                      <div class="col-4">
+                        <i
+                          class="bi bi-code-slash fs-2 text-primary"
+                          aria-hidden="true"
+                        ></i>
+
+                        <small class="d-block mt-2 text-white-50">
+                          Develop
+                        </small>
+                      </div>
+
+                      <div class="col-4">
+                        <i
+                          class="bi bi-megaphone fs-2 text-primary"
+                          aria-hidden="true"
+                        ></i>
+
+                        <small class="d-block mt-2 text-white-50">
+                          Marketing
+                        </small>
+                      </div>
+
+                      <div class="col-4">
+                        <i
+                          class="bi bi-palette fs-2 text-primary"
+                          aria-hidden="true"
+                        ></i>
+
+                        <small class="d-block mt-2 text-white-50">
+                          Design
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="bg-primary rounded-circle p-3">
+                      <i
+                        class="bi bi-lightning-charge-fill fs-4"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+
+                    <div>
+                      <h3 class="h6 mb-1">Ideas into Impact</h3>
+
+                      <small class="text-white-50">
+                        Strategy • Creativity • Technology
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             STATS
+        ====================================================== -->
+      <section
+        class="bg-primary text-white py-5"
+        aria-label="Company statistics"
+      >
+        <div class="container">
+          <div class="row g-4 text-center">
+            <div class="col-6 col-lg-3">
+              <i class="bi bi-briefcase-fill fs-1 mb-3" aria-hidden="true"></i>
+
+              <h2 class="display-6 fw-bold mb-1">150+</h2>
+
+              <p class="mb-0 opacity-75">Projects Delivered</p>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <i class="bi bi-people-fill fs-1 mb-3" aria-hidden="true"></i>
+
+              <h2 class="display-6 fw-bold mb-1">80+</h2>
+
+              <p class="mb-0 opacity-75">Happy Clients</p>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <i class="bi bi-award-fill fs-1 mb-3" aria-hidden="true"></i>
+
+              <h2 class="display-6 fw-bold mb-1">5+</h2>
+
+              <p class="mb-0 opacity-75">Years Experience</p>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <i class="bi bi-globe2 fs-1 mb-3" aria-hidden="true"></i>
+
+              <h2 class="display-6 fw-bold mb-1">12+</h2>
+
+              <p class="mb-0 opacity-75">Industries Served</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+      <section id="about" class="py-5 bg-white" aria-labelledby="about-title">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <!-- About Visual -->
+            <div class="col-lg-5">
+              <div class="bg-dark text-white rounded-4 p-5 shadow">
+                <div class="text-center mb-4">
+                  <div class="bg-primary rounded-circle d-inline-flex p-4">
+                    <i
+                      class="bi bi-rocket-takeoff-fill display-5"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </div>
+
+                <h2 class="h3 text-center fw-bold mb-3">Built for Ambition</h2>
+
+                <p class="text-white-50 text-center mb-0">
+                  We combine creativity, technology, and strategy to turn
+                  ambitious ideas into meaningful digital experiences.
+                </p>
+              </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="col-lg-7">
+              <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-3">
+                About Us
+              </span>
+
+              <h2 id="about-title" class="display-5 fw-bold mb-4">
+                Your Growth Is Our
+                <span class="text-primary"> Mission. </span>
+              </h2>
+
+              <p class="lead text-secondary">
+                We are a creative digital company helping businesses establish,
+                improve, and scale their digital presence.
+              </p>
+
+              <p class="text-secondary">
+                Our multidisciplinary team brings together developers,
+                marketers, designers, and content creators to deliver solutions
+                that are visually impressive, practical, measurable, and focused
+                on results.
+              </p>
+
+              <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                  <div class="d-flex gap-3">
+                    <i
+                      class="bi bi-bullseye text-primary fs-3"
+                      aria-hidden="true"
+                    ></i>
+
+                    <div>
+                      <h3 class="h5 fw-bold">Result Focused</h3>
+
+                      <p class="text-secondary mb-0">
+                        Every project is designed around clear business
+                        objectives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex gap-3">
+                    <i
+                      class="bi bi-lightbulb text-primary fs-3"
+                      aria-hidden="true"
+                    ></i>
+
+                    <div>
+                      <h3 class="h5 fw-bold">Creative Thinking</h3>
+
+                      <p class="text-secondary mb-0">
+                        Fresh ideas that help your brand stand apart from the
+                        competition.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn btn-dark btn-lg mt-4 px-4">
+                Work With Us
+                <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+      <section
+        id="services"
+        class="py-5 bg-light"
+        aria-labelledby="services-title"
+      >
+        <div class="container py-5">
+          <div class="text-center mx-auto mb-5">
+            <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-3">
+              What We Do
+            </span>
+
+            <h2 id="services-title" class="display-5 fw-bold mb-3">
+              Our
+              <span class="text-primary"> Services </span>
+            </h2>
+
+            <p class="lead text-secondary mb-0">
+              Everything you need to build a strong, professional, and effective
+              digital presence.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Web Development -->
+            <div class="col-md-6 col-xl-3">
+              <article
+                class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <div class="card-body p-4">
+                  <div
+                    class="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex p-3 mb-4"
+                  >
+                    <i class="bi bi-code-slash fs-2" aria-hidden="true"></i>
+                  </div>
+
+                  <h3 class="h4 fw-bold">Web Development</h3>
+
+                  <p class="text-secondary">
+                    Fast, responsive, secure, and scalable websites and web
+                    applications built around your business.
+                  </p>
+
+                  <ul class="list-unstyled text-secondary mb-0">
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Business Websites
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Web Applications
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      E-commerce
+                    </li>
+
+                    <li>
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Maintenance
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                  <a
+                    href="#contact"
+                    class="text-primary text-decoration-none fw-semibold"
+                  >
+                    Get Started
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="col-md-6 col-xl-3">
+              <article
+                class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <div class="card-body p-4">
+                  <div
+                    class="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex p-3 mb-4"
+                  >
+                    <i class="bi bi-megaphone fs-2" aria-hidden="true"></i>
+                  </div>
+
+                  <h3 class="h4 fw-bold">Digital Marketing</h3>
+
+                  <p class="text-secondary">
+                    Data-driven marketing strategies designed to increase
+                    visibility, traffic, engagement, and sales.
+                  </p>
+
+                  <ul class="list-unstyled text-secondary mb-0">
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      SEO
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Social Media
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Paid Advertising
+                    </li>
+
+                    <li>
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Content Strategy
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                  <a
+                    href="#contact"
+                    class="text-primary text-decoration-none fw-semibold"
+                  >
+                    Get Started
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Graphic Designing -->
+            <div class="col-md-6 col-xl-3">
+              <article
+                class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <div class="card-body p-4">
+                  <div
+                    class="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex p-3 mb-4"
+                  >
+                    <i class="bi bi-palette fs-2" aria-hidden="true"></i>
+                  </div>
+
+                  <h3 class="h4 fw-bold">Graphic Designing</h3>
+
+                  <p class="text-secondary">
+                    Memorable visual identities and marketing creatives that
+                    communicate your brand effectively.
+                  </p>
+
+                  <ul class="list-unstyled text-secondary mb-0">
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Brand Identity
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Social Creatives
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Marketing Materials
+                    </li>
+
+                    <li>
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      UI/UX Design
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                  <a
+                    href="#contact"
+                    class="text-primary text-decoration-none fw-semibold"
+                  >
+                    Get Started
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Video Production -->
+            <div class="col-md-6 col-xl-3">
+              <article
+                class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+              >
+                <div class="card-body p-4">
+                  <div
+                    class="bg-primary bg-opacity-10 text-primary rounded-3 d-inline-flex p-3 mb-4"
+                  >
+                    <i class="bi bi-camera-reels fs-2" aria-hidden="true"></i>
+                  </div>
+
+                  <h3 class="h4 fw-bold">Video Production</h3>
+
+                  <p class="text-secondary">
+                    Engaging video content that tells your story, captures
+                    attention, and strengthens your brand.
+                  </p>
+
+                  <ul class="list-unstyled text-secondary mb-0">
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Promotional Videos
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Social Media Videos
+                    </li>
+
+                    <li class="mb-2">
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Product Videos
+                    </li>
+
+                    <li>
+                      <i
+                        class="bi bi-check-circle-fill text-primary me-2"
+                        aria-hidden="true"
+                      ></i>
+                      Video Editing
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                  <a
+                    href="#contact"
+                    class="text-primary text-decoration-none fw-semibold"
+                  >
+                    Get Started
+                    <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             WHY CHOOSE US
+        ====================================================== -->
+      <section class="py-5 bg-dark text-white" aria-labelledby="why-title">
+        <div class="container py-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-3">
+                Why Choose Us
+              </span>
+
+              <h2 id="why-title" class="display-5 fw-bold mb-4">
+                More Than a Service Provider.
+                <span class="text-primary"> Your Growth Partner. </span>
+              </h2>
+
+              <p class="text-white-50 lead mb-0">
+                We don't just complete projects. We understand your goals, solve
+                problems, and create digital solutions designed for long-term
+                value.
+              </p>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="border border-secondary rounded-4 p-4 h-100">
+                    <i
+                      class="bi bi-person-check-fill text-primary fs-2"
+                      aria-hidden="true"
+                    ></i>
+
+                    <h3 class="h5 fw-bold mt-3">Client First</h3>
+
+                    <p class="text-white-50 mb-0">
+                      Your goals remain at the center of every decision we make.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="border border-secondary rounded-4 p-4 h-100">
+                    <i
+                      class="bi bi-shield-check text-primary fs-2"
+                      aria-hidden="true"
+                    ></i>
+
+                    <h3 class="h5 fw-bold mt-3">Reliable</h3>
+
+                    <p class="text-white-50 mb-0">
+                      Professional processes and dependable project delivery.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="border border-secondary rounded-4 p-4 h-100">
+                    <i
+                      class="bi bi-bar-chart-line-fill text-primary fs-2"
+                      aria-hidden="true"
+                    ></i>
+
+                    <h3 class="h5 fw-bold mt-3">Performance</h3>
+
+                    <p class="text-white-50 mb-0">
+                      We focus on solutions that deliver measurable business
+                      value.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="border border-secondary rounded-4 p-4 h-100">
+                    <i
+                      class="bi bi-headset text-primary fs-2"
+                      aria-hidden="true"
+                    ></i>
+
+                    <h3 class="h5 fw-bold mt-3">Support</h3>
+
+                    <p class="text-white-50 mb-0">
+                      We're here to help before, during, and after your project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             TESTIMONIALS
+        ====================================================== -->
+      <section
+        id="testimonials"
+        class="py-5 bg-white"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container py-5">
+          <div class="text-center mx-auto mb-5">
+            <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-3">
+              Client Stories
+            </span>
+
+            <h2 id="testimonials-title" class="display-5 fw-bold mb-3">
+              What Our
+              <span class="text-primary"> Clients Say </span>
+            </h2>
+
+            <p class="lead text-secondary mb-0">
+              Real feedback from businesses we've helped grow.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4">
+              <figure class="card border-0 shadow-sm rounded-4 h-100 mb-0">
+                <div class="card-body p-4">
+                  <div class="text-primary mb-3" aria-label="5 out of 5 stars">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  </div>
+
+                  <blockquote class="text-secondary fs-5">
+                    "The team understood our requirements perfectly and
+                    delivered a website that exceeded our expectations."
+                  </blockquote>
+
+                  <figcaption class="d-flex align-items-center gap-3 mt-4">
+                    <div
+                      class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center p-3"
+                    >
+                      <span class="fw-bold"> RS </span>
+                    </div>
+
+                    <div>
+                      <strong class="d-block"> Rahul Sharma </strong>
+
+                      <small class="text-secondary"> Business Owner </small>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4">
+              <figure class="card border-0 shadow-sm rounded-4 h-100 mb-0">
+                <div class="card-body p-4">
+                  <div class="text-primary mb-3" aria-label="5 out of 5 stars">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  </div>
+
+                  <blockquote class="text-secondary fs-5">
+                    "Their creative approach and attention to detail completely
+                    transformed our brand presence."
+                  </blockquote>
+
+                  <figcaption class="d-flex align-items-center gap-3 mt-4">
+                    <div
+                      class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center p-3"
+                    >
+                      <span class="fw-bold"> AP </span>
+                    </div>
+
+                    <div>
+                      <strong class="d-block"> Ananya Patel </strong>
+
+                      <small class="text-secondary"> Marketing Director </small>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4">
+              <figure class="card border-0 shadow-sm rounded-4 h-100 mb-0">
+                <div class="card-body p-4">
+                  <div class="text-primary mb-3" aria-label="5 out of 5 stars">
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                    <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  </div>
+
+                  <blockquote class="text-secondary fs-5">
+                    "Professional, responsive, and highly creative. They felt
+                    like an extension of our own team."
+                  </blockquote>
+
+                  <figcaption class="d-flex align-items-center gap-3 mt-4">
+                    <div
+                      class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center p-3"
+                    >
+                      <span class="fw-bold"> VK </span>
+                    </div>
+
+                    <div>
+                      <strong class="d-block"> Vikram Kapoor </strong>
+
+                      <small class="text-secondary"> Founder &amp; CEO </small>
+                    </div>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             CTA
+        ====================================================== -->
+      <section class="bg-primary text-white py-5" aria-labelledby="cta-title">
+        <div class="container py-4">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h2 id="cta-title" class="display-6 fw-bold mb-2">
+                Have an Idea? Let's Build It.
+              </h2>
+
+              <p class="lead mb-0 opacity-75">
+                Tell us what you're working on and let's create something that
+                makes an impact.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-light btn-lg px-4">
+                Start a Conversation
+                <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+      <section
+        id="contact"
+        class="py-5 bg-light"
+        aria-labelledby="contact-title"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <!-- Contact Information -->
+            <div class="col-lg-5">
+              <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-3">
+                Contact Us
+              </span>
+
+              <h2 id="contact-title" class="display-5 fw-bold mb-4">
+                Let's Start Something
+                <span class="text-primary"> Great. </span>
+              </h2>
+
+              <p class="lead text-secondary mb-5">
+                Have a project in mind? Send us a message and our team will get
+                back to you.
+              </p>
+
+              <!-- Email -->
+              <div class="d-flex gap-3 mb-4">
+                <div class="bg-primary text-white rounded-3 p-3">
+                  <i class="bi bi-envelope-fill fs-4" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                  <small class="text-secondary d-block"> Email </small>
+
+                  <a
+                    href="mailto:hello@VertexDigital.com"
+                    class="text-dark text-decoration-none fw-semibold"
+                  >
+                    hello@VertexDigital.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="d-flex gap-3 mb-4">
+                <div class="bg-primary text-white rounded-3 p-3">
+                  <i class="bi bi-telephone-fill fs-4" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                  <small class="text-secondary d-block"> Phone </small>
+
+                  <a
+                    href="tel:+919876543210"
+                    class="text-dark text-decoration-none fw-semibold"
+                  >
+                    +91 98765 43210
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="d-flex gap-3">
+                <div class="bg-primary text-white rounded-3 p-3">
+                  <i class="bi bi-geo-alt-fill fs-4" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                  <small class="text-secondary d-block"> Location </small>
+
+                  <span class="fw-semibold"> New Delhi, India </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+              <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4 p-lg-5">
+                  <h3 class="h4 fw-bold mb-4">Send Us a Message</h3>
+
+                  <!--
+                                    IMPORTANT:
+                                    Replace action="#" with your real backend endpoint.
+                                    Example:
+                                    action="api/contact.php"
+                                -->
+                  <form action="#" method="post" accept-charset="UTF-8">
+                    <div class="row g-3">
+                      <!-- Name -->
+                      <div class="col-md-6">
+                        <label for="name" class="form-label fw-semibold">
+                          Full Name
+                        </label>
+
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          id="name"
+                          name="name"
+                          placeholder="Your name"
+                          autocomplete="name"
+                          minlength="2"
+                          maxlength="100"
+                          required
+                        />
+                      </div>
+
+                      <!-- Email -->
+                      <div class="col-md-6">
+                        <label for="email" class="form-label fw-semibold">
+                          Email Address
+                        </label>
+
+                        <input
+                          type="email"
+                          class="form-control form-control-lg"
+                          id="email"
+                          name="email"
+                          placeholder="you@example.com"
+                          autocomplete="email"
+                          maxlength="254"
+                          required
+                        />
+                      </div>
+
+                      <!-- Phone -->
+                      <div class="col-md-6">
+                        <label for="phone" class="form-label fw-semibold">
+                          Phone Number
+                        </label>
+
+                        <input
+                          type="tel"
+                          class="form-control form-control-lg"
+                          id="phone"
+                          name="phone"
+                          placeholder="+91 98765 43210"
+                          autocomplete="tel"
+                          maxlength="20"
+                        />
+                      </div>
+
+                      <!-- Service -->
+                      <div class="col-md-6">
+                        <label for="service" class="form-label fw-semibold">
+                          Service
+                        </label>
+
+                        <select
+                          class="form-select form-select-lg"
+                          id="service"
+                          name="service"
+                          required
+                        >
+                          <option value="" selected disabled>
+                            Select a service
+                          </option>
+
+                          <option value="web-development">
+                            Web Development
+                          </option>
+
+                          <option value="digital-marketing">
+                            Digital Marketing
+                          </option>
+
+                          <option value="graphic-designing">
+                            Graphic Designing
+                          </option>
+
+                          <option value="video-production">
+                            Video Production
+                          </option>
+
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+
+                      <!-- Message -->
+                      <div class="col-12">
+                        <label for="message" class="form-label fw-semibold">
+                          Message
+                        </label>
+
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Tell us about your project..."
+                          minlength="10"
+                          maxlength="5000"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <!-- Consent -->
+                      <div class="col-12">
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="1"
+                            id="consent"
+                            name="consent"
+                            required
+                          />
+
+                          <label
+                            class="form-check-label text-secondary"
+                            for="consent"
+                          >
+                            I agree to be contacted regarding my enquiry.
+                          </label>
+                        </div>
+
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-lg w-100"
+                        >
+                          Send Enquiry
+
+                          <i
+                            class="bi bi-send-fill ms-2"
+                            aria-hidden="true"
+                          ></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="bg-dark text-white">
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Company -->
+          <div class="col-lg-5">
+            <a
+              href="#home"
+              class="text-white text-decoration-none fw-bold fs-4"
+            >
+              <i class="bi bi-buildings-fill me-2" aria-hidden="true"></i>
+
+              VertexDigital
+            </a>
+
+            <p class="text-white-50 mt-3 mb-4">
+              Helping ambitious businesses build stronger brands, better digital
+              experiences, and sustainable growth.
+            </p>
+
+            <!-- Social Links -->
+            <div class="d-flex gap-2">
+              <a
+                href="#"
+                class="btn btn-outline-light rounded-circle"
+                aria-label="Facebook"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-outline-light rounded-circle"
+                aria-label="Instagram"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-outline-light rounded-circle"
+                aria-label="LinkedIn"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="#"
+                class="btn btn-outline-light rounded-circle"
+                aria-label="YouTube"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Company Links -->
+          <div class="col-6 col-lg-2">
+            <h2 class="h6 fw-bold mb-3">Company</h2>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#about" class="text-white-50 text-decoration-none">
+                  About Us
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a href="#services" class="text-white-50 text-decoration-none">
+                  Services
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a
+                  href="#testimonials"
+                  class="text-white-50 text-decoration-none"
+                >
+                  Testimonials
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" class="text-white-50 text-decoration-none">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-6 col-lg-2">
+            <h2 class="h6 fw-bold mb-3">Services</h2>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#services" class="text-white-50 text-decoration-none">
+                  Web Development
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a href="#services" class="text-white-50 text-decoration-none">
+                  Digital Marketing
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a href="#services" class="text-white-50 text-decoration-none">
+                  Graphic Designing
+                </a>
+              </li>
+
+              <li>
+                <a href="#services" class="text-white-50 text-decoration-none">
+                  Video Production
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-3">
+            <h2 class="h6 fw-bold mb-3">Get In Touch</h2>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-envelope me-2" aria-hidden="true"></i>
+
+              hello@VertexDigital.com
+            </p>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-telephone me-2" aria-hidden="true"></i>
+
+              +91 98765 43210
+            </p>
+
+            <p class="text-white-50 mb-0">
+              <i class="bi bi-geo-alt me-2" aria-hidden="true"></i>
+
+              New Delhi, India
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-5" />
+
+        <!-- Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <p class="text-white-50 mb-0">
+            &copy;
+            <span id="currentYear"></span>
+            VertexDigital. All rights reserved.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="text-white-50 text-decoration-none">
+              Privacy Policy
+            </a>
+
+            <a href="#" class="text-white-50 text-decoration-none">
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+         BACK TO TOP
+    ========================================================== -->
+    <div class="position-fixed bottom-0 end-0 p-3 z-2">
+      <a
+        href="#home"
+        class="btn btn-primary rounded-circle shadow"
+        aria-label="Back to top"
+      >
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <!-- =========================================================
+         BOOTSTRAP JAVASCRIPT
+    ========================================================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- =========================================================
+         MINIMAL SITE JAVASCRIPT
+    ========================================================== -->
+    <script>
+      (() => {
+        "use strict";
+
+        /*
+         * Dynamic copyright year
+         */
+        const currentYear = document.getElementById("currentYear");
+
+        if (currentYear) {
+          currentYear.textContent = new Date().getFullYear();
+        }
+
+        /*
+         * Automatically close mobile navbar
+         * after clicking a navigation link.
+         */
+        const navbar = document.getElementById("mainNavbar");
+
+        if (navbar) {
+          const navbarCollapse = bootstrap.Collapse.getOrCreateInstance(
+            navbar,
+            {
+              toggle: false,
+            },
+          );
+
+          navbar
+            .querySelectorAll(".nav-link, .navbar-brand, .navbar-nav .btn")
+            .forEach((link) => {
+              link.addEventListener("click", () => {
+                if (
+                  window.innerWidth < 992 &&
+                  navbar.classList.contains("show")
+                ) {
+                  navbarCollapse.hide();
+                }
+              });
+            });
+        }
+      })();
+    </script>
+  </body>
+</html>
